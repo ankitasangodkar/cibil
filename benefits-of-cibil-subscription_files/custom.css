@@ -1,0 +1,219 @@
+h1,h2,h3,h4,h5,h6{
+	font-family: IntroRegular,sans-serif;
+}
+.light-grey-bg{
+	background: #eee;
+}
+.border-top_8{
+	border-top: 8px solid #FCD833;
+}
+.fw-600{
+	font-weight: 600;
+}
+.text-color-yellow{
+	color: #FCD833;
+}
+.text-color-white{
+	color: white;
+}
+.d-block{
+	display: block;
+}
+.m-b{
+	margin-bottom: 0;
+}
+.m-b10{
+	margin-bottom: 10px;
+}
+
+.subscriptionBenefits .modal-dialog{
+	width: 70%;
+}
+.subscriptionBenefits .block-wrapper{
+	padding: 0 20px 40px;
+    width: 575px;
+    margin: auto;
+}
+.subscriptionBenefits #subscriptionModalLabel{
+	margin: 0;
+	padding: 8px 0 13px;
+}
+.subscriptionBenefits .contentFeature .primaryHeadline{
+	font-weight: 700;
+    text-align: left;
+    padding: 25px 0 13px;
+    font-size: 27px;
+	line-height: 27px;
+}
+.subscriptionBenefits .secondaryHeader{
+	font-weight: 300;
+	font-size: 27px;
+	line-height: 28px;    
+    margin: 0;
+    padding-bottom: 10px;
+    text-align: left;
+}
+.subscriptionBenefits .floating-img {
+	position: relative;
+    height: 90px;
+    margin-bottom: 15px;
+}
+.subscriptionBenefits .floating-img img{
+    width: 160px;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+}
+.subscriptionBenefits .info-block .secondaryHeader{
+	padding-top: 15px;
+	padding-bottom: 18px !important;
+}
+.subscriptionBenefits .info-block .introOne{
+    font-size: 18px !important;
+    line-height: 22px !important;
+}
+.subscriptionBenefits .info-block li img{
+	padding-right: 11px;
+}
+.subscriptionBenefits .block-list{
+	position: relative;
+}
+.subscriptionBenefits .block-list img.subscription-score{
+    position: absolute;
+    right: 70px;
+    top: 0;
+}
+.subscriptionBenefits .block-option .form-check{
+	background: #FFFFFF;
+	border: 1px solid rgba(130, 130, 130, 0.2);
+	box-sizing: border-box;
+	border-radius: 4px;
+	margin-bottom: 27px;
+	padding: 22px 26px;
+	display: flex;
+    align-items: center;
+}
+.subscriptionBenefits .block-option .amount{
+    display: flex;
+    margin: 0 24px;
+    align-items: center;
+}
+.subscriptionBenefits .block-option .price{
+	font-size: 18px;
+	line-height: 18px;
+	color: #000000;
+	opacity: 0.6;
+}
+.subscriptionBenefits .block-option .percent-off{
+    font-size: 12px;
+    line-height: 12px;
+    padding: 3px 5px 1px;
+    color: #F16E33;
+    background: rgba(241, 110, 51, 0.25);
+}
+.subscriptionBenefits .block-option .monthly-charge{
+	font-weight: bold;
+    font-size: 12px;
+    line-height: 19px;
+    color: #000000;
+    opacity: 0.6;
+    margin-right: 10px;
+}
+.subscriptionBenefits .seperator{
+	background: rgba(130, 130, 130, 0.2);
+    opacity: 1;
+    box-shadow: inset 2px 4px 12px rgba(230, 230, 230, 0.25);
+    width: 94%;
+    height: 1px;
+    margin: 0px 24px 6px;
+}
+.subscriptionBenefits .option-group{
+	width: 100%;
+}
+.subscriptionBenefits .form-check-label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 0 24px;
+}
+.subscriptionBenefits .form-check.active{
+	background: #D8EDF5;
+	border: 1px solid #3EA3CE;
+	box-sizing: border-box;
+	box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+}
+.subscriptionBenefits .info-block .btn.btn-primary{
+	width: 100%;
+    padding: 14px 0;
+    height: 56px;
+}
+.subscriptionBenefits .info-block .btn.btn-primary span{
+	font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    text-transform: capitalize;
+    color: #000000;
+}
+.subscriptionBenefits button.close{
+    box-shadow: none;
+    width: auto;
+    position: absolute;
+    top: -25px;
+    right: -15px;
+    min-width: auto;
+    opacity: 1;
+    color: #9e9e9e;
+    text-shadow: revert;
+    font-size: 30px;
+}
+.subscriptionBenefits .info-block .footerLinks{
+	margin-top: 30px;
+}
+.subscriptionBenefits .info-block .footerLinks a{
+	font-size: 12px;
+	line-height: 12px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+	opacity: 0.5;
+}
+
+@media (min-width: 768px){
+	.subscriptionBenefits .contentFeature {
+	    min-height: 100%;
+	}
+}
+@media (max-width: 991px){
+	.subscriptionBenefits .block-wrapper{
+		padding: 0 20px 30px;
+	    width: auto;
+	}
+}
+@media (max-width: 767px){
+	.subscriptionBenefits  .modal-dialog{
+		width: 100%;
+		margin: 0;
+	}
+	.subscriptionBenefits  .modal-dialog .modal-content{
+		border-width: 0px;
+	}
+	.subscriptionBenefits  .secondaryHeader{
+		font-size: 24px;
+		line-height: 28px;
+		padding-bottom: 0;
+	}
+	.subscriptionBenefits .contentFeature {
+		min-height: auto !important;
+	}
+	.subscriptionBenefits .contentIntroTwo{
+		font-size: 20px;
+	}
+	.subscriptionBenefits .block-list img.subscription-score{
+		display: none;
+	}
+}
