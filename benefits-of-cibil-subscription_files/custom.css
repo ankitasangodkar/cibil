@@ -255,6 +255,11 @@ h1,h2,h3,h4,h5,h6{
 		padding: 0 20px 30px;
 	    width: auto;
 	}
+	.subscriptionBenefits button.close{
+		font-size: 40px;
+		top: -30px;
+		right: -25px;
+	}
 }
 @media (max-width: 767px){
 	.subscriptionBenefits  .modal-dialog{
@@ -280,5 +285,8 @@ h1,h2,h3,h4,h5,h6{
 	}
 	.subscriptionBenefits .f-20 {
 		font-size: 16px;
+	}
+	.subscriptionBenefits .info-block .introOne{
+		font-size: 16px !important;
 	}
 }
