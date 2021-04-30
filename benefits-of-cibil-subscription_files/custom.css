@@ -106,10 +106,14 @@ h1,h2,h3,h4,h5,h6{
 	box-sizing: border-box;
 	border-radius: 4px;
 	margin-bottom: 27px;
-	padding: 22px 26px;
+	/* padding: 22px 26px; */
 	display: flex;
     align-items: center;
 	position: relative;
+}
+.subscriptionBenefits .block-option .form-check label{
+    padding: 22px 22px;
+    width: 100%;
 }
 .subscriptionBenefits .block-option .form-check input{
 	width: 20px;
@@ -117,7 +121,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .subscriptionBenefits .block-option .amount{
     display: flex;
-    margin: 0 24px;
+    /* margin: 0 24px; */
     align-items: center;
 }
 .subscriptionBenefits .block-option .price{
@@ -159,12 +163,13 @@ h1,h2,h3,h4,h5,h6{
 }
 .subscriptionBenefits .option-group{
 	width: 100%;
+	padding-left: 30px;
 }
 .subscriptionBenefits .form-check-label {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 0 0 24px;
+    /* margin: 0 0 0 24px; */
 }
 .subscriptionBenefits .form-check.active{
 	background: #D8EDF5;
@@ -244,6 +249,65 @@ h1,h2,h3,h4,h5,h6{
     position: absolute;
     top: -10px;
     right: 20px;
+}
+.custom-radio-input{
+	position: absolute;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 1;
+	cursor: pointer;
+}
+.custom-radio [type="radio"]:checked + label:before,
+.custom-radio [type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 50%;
+	transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 1px solid #3b3b3b;
+    border-radius: 100%;
+    background: #fff;
+}
+.custom-radio [type="radio"]:checked + label:after,
+.custom-radio [type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #0075ff;
+    position: absolute;
+    left: 24px;
+    top: 50%;
+	transform: translateY(-50%);
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.custom-radio [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.custom-radio [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1) translateY(-50%);
+    transform: scale(1) translateY(-50%);
+}
+.custom-radio [type="radio"]:checked + label:before {
+	border: 1px solid #0075ff;
+}
+.custom-radio [type="radio"]:checked + label{
+	background: #D8EDF5;
+	border: 1px solid #3EA3CE;
+	box-sizing: border-box;
+	box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
 }
 @media (min-width: 768px){
 	.subscriptionBenefits .contentFeature {
