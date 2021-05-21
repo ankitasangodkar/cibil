@@ -21,6 +21,9 @@ h1,h2,h3,h4,h5,h6{
     }
 }
 .text{
+    &-color-black-08{
+        color: rgba(0, 0, 0, 0.8);
+    }
     &-color-yellow{
         color: #FCD833;
     }
@@ -562,6 +565,9 @@ h1,h2,h3,h4,h5,h6{
     }
     &-8{
         padding-bottom: 80px;
+    }
+    &-120{
+        padding-bottom: 120px;
     }
     &-130{
         padding-bottom: 130px;
