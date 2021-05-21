@@ -672,6 +672,9 @@ h1,h2,h3,h4,h5,h6{
     &-rightcol{
         width: 55px;
     }
+    @media (min-width: 992px) {
+        max-width: 530px;
+    }
 }
 
 .buttonc{
@@ -723,12 +726,33 @@ h1,h2,h3,h4,h5,h6{
         margin: 0 auto;
         .row{
             display: flex;
+            flex-wrap: wrap;
+            &::before{
+                display: none;
+            }
         }
         .col-6{
             width: 50%;
             padding-left: 3px;
             padding-right: 3px;
             display: flex;
+            .buttonc {
+                width: 100%;
+            }
+            &-mobile{
+                @media (max-width: 991px) {
+                    margin-top: 6px;
+                    width: 100%;
+                }
+            }
+            @media (min-width: 992px) {
+                width: 33.33%;
+                padding-left: 6px;
+                padding-right: 6px;
+            }
+        }
+        @media (min-width: 992px) {
+            max-width: 600px;
         }
     }
     .w-100{
