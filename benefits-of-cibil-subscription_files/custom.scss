@@ -522,6 +522,11 @@ h1,h2,h3,h4,h5,h6{
     &-6{
         margin-bottom: 60px;
     }
+    &-md-6{
+        @media (min-width: 992px) {
+            margin-bottom: 60px;
+        }
+    }
 }
 .padding-top{
     &-0{
