@@ -60,10 +60,13 @@ h1,h2,h3,h4,h5,h6{
     }
 }
 .m-b{
-	margin-bottom: 0;
+	margin-bottom: 0 !important;
 }
 .m-b10{
 	margin-bottom: 10px;
+}
+.padding-20{
+    padding: 20px;
 }
 .padding-30{
     padding: 30px;
@@ -96,6 +99,9 @@ h1,h2,h3,h4,h5,h6{
     }
 }
 .margin-bottom{
+    &-0{
+        margin-bottom: 0 !important;
+    }    
     &-05{
         margin-bottom: 5px;
     }
@@ -258,6 +264,9 @@ h1,h2,h3,h4,h5,h6{
     &-0{
         margin-left: 0 !important;
     }
+    &-05{
+        margin-left: 5px !important;
+    }
     &-1{
         margin-left: 10px !important;
     }
@@ -275,6 +284,11 @@ h1,h2,h3,h4,h5,h6{
     }
     &-6{
         margin-left: 60px !important;
+    }
+}
+.margin-right{
+    &-05{
+        margin-right: 5px !important;
     }
 }
 .f{
@@ -311,6 +325,9 @@ h1,h2,h3,h4,h5,h6{
     position: absolute;
     top: -10px;
     right: 20px;
+    &-0{
+        right: 0;
+    }
 }
 .position-relative{
     position: relative;
@@ -330,7 +347,15 @@ h1,h2,h3,h4,h5,h6{
         height: 1px;
         width: 100%;
         background: #DCDDDF;
-        margin: 20px 0;
+        margin: 20px 0 ;
+    }
+    &-grey-1{
+        height: 1px;
+        width: 100%;
+        background: #C4C4C4;
+        opacity: 0.4;
+        box-shadow: inset 2px 4px 12px rgba(230, 230, 230, 0.25);
+        margin: 7px 0;
     }
 }
 .custom-btntabs{
@@ -451,7 +476,7 @@ h1,h2,h3,h4,h5,h6{
         border: 1px solid rgba(130, 130, 130, 0.2);
         box-sizing: border-box;
         border-radius: 4px;
-        margin-bottom: 27px;
+        margin-bottom: 10px;
         display: flex;
         align-items: center;
         position: relative;
@@ -459,6 +484,7 @@ h1,h2,h3,h4,h5,h6{
     .block-option .form-check label{
         padding: 22px 22px;
         width: 100%;
+        border: 1px solid rgba(130,130,130,0.2);
     }
     .block-option .form-check input{
         width: 20px;
@@ -479,12 +505,12 @@ h1,h2,h3,h4,h5,h6{
         font-weight: 600;
         line-height: 18px;
         color: #000000;
-        opacity: 1;
+        opacity: 0.6;
     }
     .block-option .percent-off{
         font-size: 12px;
         line-height: 12px;
-        padding: 3px 5px 1px;
+        padding: 3px 5px 3px;
         color: #F16E33;
         background: rgba(241, 110, 51, 0.25);
     }
@@ -647,6 +673,7 @@ h1,h2,h3,h4,h5,h6{
 	height: 100% !important;
 	z-index: 1;
 	cursor: pointer;
+    margin: 0 !important;
 }
 .custom-radio {
 	[type="radio"] {
@@ -664,13 +691,13 @@ h1,h2,h3,h4,h5,h6{
 						border: 1px solid #3b3b3b;
 						border-radius: 100%;
 						background: #fff;
-						border: 1px solid #0075ff;
+						border: 1px solid #00A2D1;
 					}
 					&:after {
 						content: '';
 						width: 12px;
 						height: 12px;
-						background: #0075ff;
+						background: #00A2D1;
 						position: absolute;
 						left: 24px;
 						top: 50%;
@@ -682,8 +709,8 @@ h1,h2,h3,h4,h5,h6{
 						-webkit-transform: scale(1) translateY(-50%);
 						transform: scale(1) translateY(-50%);
 					}
-					background: #D8EDF5;
-					border: 1px solid #3EA3CE;
+					background: #ffffff;
+					border: 1px solid #00A2D1;
 					box-sizing: border-box;
 					box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
 					border-radius: 4px;
@@ -1170,6 +1197,49 @@ h1,h2,h3,h4,h5,h6{
 }
 .image-text{
     margin-top: -45px;
+}
+.custom-backdrop{
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1051;
+    display: none;
+    &.up{
+        display: block;
+    }
+}
+.custom-slildeup{
+    background: transparent;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1052;    
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    transition: all 0.5s ease-in;
+    display: flex;
+    align-items: flex-end;  
+    &-close{
+        position: absolute;
+        top: 0;
+        right: 6px;
+        color: #ffffff;
+        font-size: 30px;
+    }  
+    &.up{
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+.w-100{
+    width: 100%;
 }
 @media (min-width: 768px){
     .text-md-center{

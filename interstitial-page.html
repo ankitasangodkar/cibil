@@ -1024,9 +1024,9 @@
 																		</label>
 																	</div>
 																</div>
-																<div class="text-center">
-																	<button class="bttn bttn-outline bttn-skip">No thanks</button>
-																	<button class="bttn bttn-orange bttn-upgrade">UPGRADE</button>
+																<div class="d-flex">
+																	<button class="bttn bttn-outline bttn-skip margin-right-05 " data-dismiss="modal">No thanks</button>
+																	<button class="bttn bttn-orange bttn-upgrade show-slideup margin-left-05">UPGRADE</button>
 																</div>
 															</div>                                                       
 														</div>
@@ -1146,12 +1146,83 @@
 																		</label>
 																	</div>
 																</div>
-																<div class="text-center">
-																	<button class="bttn bttn-outline bttn-skip bttn-no-border">No thanks</button>
+																<div class="d-flex">
+																	<button class="bttn bttn-outline bttn-skip bttn-no-border" data-dismiss="modal">No thanks</button>
 																	<button class="bttn bttn-orange bttn-upgrade">UPGRADE</button>
 																</div>
 															</div>                                                       
 														</div>
+													</div>
+												</div>
+												<div class="custom-backdrop">													
+												</div>
+												<div class="custom-slildeup">
+													<div class="custom-slildeup-close">
+														&times;
+													</div>													
+													<div class="block-option bg-white padding-20 w-100">
+														<h5 class="f-20 text-center margin-top-0 margin-bottom-3">Subscription duration </h5>
+														<div class="form-check align-start custom-radio">
+															<input class="form-check-input custom-radio-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked="">
+															<label for="flexRadioDefault1">
+																<div class="option-group">
+																	<div class="form-check-label">
+																		<div class="contentIntroTwo fw-600 m-b">
+																			12 Months</div>
+																		<div class="price price-bold text-capitalize">
+																			₹1200</div>
+																	</div>
+																	<div class="line-separator-grey-1"></div>
+																	<div class="amount">
+																		<div class="monthly-charge">
+																			(₹100 per month)
+																		</div>
+																		<div class="percent-off">save 81%</div>
+																	</div>
+																</div>
+															</label>
+															<div class="r-badge r-badge-0">
+																Recommended
+															</div>
+														</div>
+														<div class="form-check align-start custom-radio">
+															<input class="form-check-input custom-radio-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+															<label for="flexRadioDefault2">
+																<div class="option-group">
+																	<div class="form-check-label" "="">
+																		<div class=" contentIntroTwo fw-600 m-b">
+																		6 Months</div>
+																	<div class="price price-bold text-capitalize">
+																		₹800</div>
+																</div>
+																<div class="line-separator-grey-1"></div>
+																<div class="amount">
+																	<div class="monthly-charge">(₹134 per month)</div>
+																	<div class="percent-off">save 75%</div>
+																</div>
+															</div>
+															</label>
+														</div>
+														<div class="form-check align-start custom-radio">
+															<input class="form-check-input custom-radio-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+															<label for="flexRadioDefault3">
+																<div class="option-group">
+																	<div class="form-check-label" "="">
+																		<div class=" contentIntroTwo fw-600 m-b">
+																		No thanks</div>
+																		<div class="price price-bold text-capitalize">
+																		₹1200</div>
+																	</div>
+																	<div class="line-separator-grey-1"></div>
+																	<div class="amount">
+																	<div class="monthly-charge">(You
+																		will not recieve any
+																		protection)</div>
+																</div>
+																</div>
+															</label>
+														</div>
+														<button class="margin-top-2 bttn bttn-orange bttn-upgrade w-100">UPGRADE</button>
 													</div>
 												</div>
 								            </section>
@@ -1162,9 +1233,17 @@
 									var offer = document.getElementById("membershipOffer");
 									window.location = offer.value;
 								}
+								$(document).ready(function() {
+									$('#interstitial-modal1 .show-slideup').on('click', function (e) {
+										$('.custom-slildeup').addClass('up');
+										$('.custom-backdrop').addClass('up');
+									});
+									$('.custom-slildeup-close').on('click', function (e) {
+										$('.custom-slildeup').removeClass('up');
+										$('.custom-backdrop').removeClass('up');
+									});
+								});
 							</script>
-
-
 						</div>
 					</div>
 				</div>
