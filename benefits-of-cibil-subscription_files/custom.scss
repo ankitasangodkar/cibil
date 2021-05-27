@@ -1,5 +1,5 @@
 h1,h2,h3,h4,h5,h6{
-	font-family: IntroRegular,sans-serif;
+	font-family: 'IntroRegular';
 }
 .light{
     &-grey-bg{
@@ -18,9 +18,11 @@ h1,h2,h3,h4,h5,h6{
 .fw{
     &-300{
         font-weight: 400 !important;
+        font-family: 'IntroLight';
     }
     &-400{
         font-weight: 400 !important;
+        font-family: 'IntroRegular';
     }
     &-600{
         font-weight: 600 !important;
@@ -337,9 +339,7 @@ h1,h2,h3,h4,h5,h6{
     border-radius: 999px; 
     background: #ffffff;
     border: 1px solid #FCD833;
-    width: max-content;
-    margin-left: auto;
-    margin-right: auto;
+    width: max-content;    
     li{
         margin: 0;
         min-width: 142px;
@@ -1015,6 +1015,115 @@ h1,h2,h3,h4,h5,h6{
 .text-line-through{
     text-decoration: line-through;
     color: #B1B4B7;
+}
+.plans-radio{
+    &-row{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-col{
+        width: 32%;
+        position: relative;
+        label{
+            background: #FFFFFF;
+            border: 0.5px solid #969696;
+            box-shadow: 0px 0px 10px rgba(80, 80, 80, 0.1);
+            border-radius: 4px;
+            padding: 15px;
+            height: 100%;
+        }
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            margin: 0;
+            &:checked {
+                ~ {
+                    .checkmark {
+                        background-color: #2196F3;
+                        border: 1px solid #2196F3;
+                        &:after {
+                            display: block;
+                        }
+                    }
+                    label{
+                        background: #EAF1FF;
+                        border: 1px solid rgba(0, 83, 101, 0.69);
+                        box-shadow: 0px 0px 10px rgba(80, 80, 80, 0.25);
+                        border-radius: 4px;
+                    }
+                }
+            }
+        } 
+        .checkmark {
+            &:after {
+                left: 7px;
+                top: 3px;
+                width: 5px;
+                height: 10px;
+                border: solid white;
+                border-width: 0 2px 2px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+        } 
+        .checkmark {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            height: 20px;
+            width: 20px;
+            background-color: #ffffff;
+            border: 1px solid #969696;
+            border-radius: 50%;
+            &:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+        }      
+    }
+    &-price{
+        font-size: 14px;
+        font-weight: 400;
+        color: #333333;
+        margin-bottom: 8px;
+    }
+    &-title{
+        font-size: 18px;
+        font-family: 'IntroSemiBold';
+        font-weight: 700;
+        color: #333333;
+        margin-bottom: 10px;
+        @media (max-width: 380px) {
+            font-size: 12px;
+        }
+    }
+    &-sub-title{
+        font-size: 12px;
+        color: #333333;
+    }
+}
+.offer{
+    &-text{
+        position: relative;
+        top: 15px;
+        p{
+            margin: 0;
+            font-size: 14px;
+            font-style: italic;
+            color: #fff;
+            margin-left: 25px;
+        }    
+    }
+    &-icon{
+        position: relative;
+        top: -6px;
+    }
 }
 @media (min-width: 768px){
 	.subscriptionBenefits .contentFeature {
