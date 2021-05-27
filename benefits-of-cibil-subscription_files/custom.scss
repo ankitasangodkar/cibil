@@ -16,6 +16,9 @@ h1,h2,h3,h4,h5,h6{
 	border-top: 8px solid #FCD833;
 }
 .fw{
+    &-300{
+        font-weight: 400 !important;
+    }
     &-400{
         font-weight: 400 !important;
     }
@@ -923,13 +926,26 @@ h1,h2,h3,h4,h5,h6{
     background: #ffffff;
     box-shadow: none;
     min-width: 140px;
+    margin-bottom: 0;
     &-orange{
         color: #ffffff;
         background: #F16E33;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05)
-    }
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    }    
     @media (max-width: 480px) {
         padding: 12px 30px;
+    }
+    &-skip{
+        @media (max-width: 768px) {
+            border: 1px solid transparent;
+            min-width: 80px;
+            padding: 12px 20px;
+        }        
+    }
+    &-upgrade{
+        @media (max-width: 768px) {
+            padding: 12px 60px;
+        }
     }
 }
 .sticky-footer{
@@ -1028,6 +1044,9 @@ h1,h2,h3,h4,h5,h6{
 		padding-left: 5px;
 		padding-right: 5px;
 	}
+    .mobile-transparent{
+        background: transparent;
+    }
 }
 @media (max-width: 767px){
 	.subscriptionBenefits  .modal-dialog{
