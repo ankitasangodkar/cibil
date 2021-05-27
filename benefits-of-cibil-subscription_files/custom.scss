@@ -315,6 +315,11 @@ h1,h2,h3,h4,h5,h6{
         height: 1px;
         width: 100%;
         background: rgba(255, 255, 255, 0.22);
+        margin: 30px;
+        @media (max-width: 768px) {
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
     &-grey{
         height: 1px;
