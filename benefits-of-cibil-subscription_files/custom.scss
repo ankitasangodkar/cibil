@@ -1039,7 +1039,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .card-row{
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     &-img{
 
     }
@@ -1241,6 +1241,9 @@ h1,h2,h3,h4,h5,h6{
 }
 .w-100{
     width: 100%;
+}
+.justify-space-between{
+    justify-content: space-between;
 }
 @media (min-width: 768px){
     .text-md-center{
