@@ -1324,6 +1324,23 @@ h1,h2,h3,h4,h5,h6{
 .justify-space-between{
     justify-content: space-between;
 }
+@keyframes turn-on {
+    0% {
+       left:100%;
+    }
+    100% {
+       left:0%;
+    }
+}
+@keyframes turn-off {
+    0% {
+       right:100%;
+    }
+    100% {
+       right:0%;
+    }
+}
+
 @media (min-width: 768px){
     .text-md-center{
         text-align: center;
@@ -1393,4 +1410,101 @@ h1,h2,h3,h4,h5,h6{
 	.subscriptionBenefits .info-block .introOne{
 		font-size: 16px !important;
 	}
+}
+
+
+// 
+
+span.switcher {
+    position: relative;
+    width: 298px;
+    height: 48px;
+    border-radius: 25px;
+    margin: 0;
+    font-family: 'IntroRegular';
+    input {
+        margin: 0;
+        appearance: none;
+        position: relative;
+        width: 298px;
+        height: 48px;
+        border-radius: 25px;
+        background-color: #ffffff;
+        outline: none;
+        outline: 0 !important;
+        border: 1px solid #FCD833;
+        cursor: pointer;
+        &:before,
+        &:after {
+            z-index: 2;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #ffffff;
+        }
+        &:before {
+            content: "Free";
+            left: 55px;
+            font-size: 18px;
+            font-family: 'IntroRegular';
+            font-weight: 600;
+            line-height: 18px;
+        }
+        &:after {
+            content: "Upgrade";
+            right: 40px;
+            font-size: 18px;
+            font-family: 'IntroRegular';
+            font-weight: 600;
+            line-height: 18px;
+        }
+    }
+    label {
+        z-index: 1;
+        position: absolute;
+        top: 5px;
+        bottom: 5px;
+        border-radius: 20px;
+        // box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);        
+    }
+    &.switcher-1 {
+        input {
+            transition: 0.25s -0.1s;
+            &:checked {
+                background-color: #ffffff;
+                &:before {
+                    color: #000000;
+                    transition: color 0.5s 0.2s;
+                }
+                &:after {
+                    color: #757575;
+                    transition: color 0.5s;
+                }
+                & + label {
+                    left: 5px;
+                    right: 151px;
+                    background: #FCD833;
+                    transition: left 0.5s, right 0.4s 0.2s;
+                }
+            }
+            &:not(:checked) {
+                background: #ffffff;
+                transition: background 0.5s -0.1s;
+                &:before {
+                    color: #757575;
+                    transition: color 0.5s;
+                }
+                &:after {
+                    color: #000000;
+                    transition: color 0.5s 0.2s;
+                }
+                & + label {
+                    left: 151px;
+                    right: 5px;
+                    background: #FCD833;
+                    transition: left 0.4s 0.2s, right 0.5s, background 0.35s -0.1s;
+                }
+            }
+        }
+    }
 }

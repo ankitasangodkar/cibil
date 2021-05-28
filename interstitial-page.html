@@ -36,6 +36,14 @@
 	<meta name="twitter:image" content="https://assets.transunion.com/resources/img/tu-twitter-thumbnail-090616.jpg">
 	<meta name="og:image:width" content="1079">
 	<meta name="og:image:height" content="395">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-198085260-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-198085260-1');
+	</script>
 	<iframe style="position: absolute; top: -10000px; left: -1000px;"
 		src="./benefits-of-cibil-subscription_files/saved_resource.html"></iframe>
 	<script async="" src="./benefits-of-cibil-subscription_files/gtm.js"></script>
@@ -877,20 +885,27 @@
 																	<div class="text-center">
 																		<h4 class="f-18 text-color-white fw-600 margin-bottom-1">Choose the right plan for you</h4>
 																	</div>
+																	
 																	<!-- Nav tabs -->
-																	<div class="margin-bottom-5 d-flex padding-left-9-md">
-																		<ul class="custom-btntabs" role="tablist">
+																	<div class="margin-bottom-5 d-flex padding-left-9-md">	
+																		<!-- <ul class="custom-btntabs" role="tablist">
 																			<li role="presentation" class=""><a href="#free" aria-controls="free" role="tab" data-toggle="tab">Free</a></li>
 																			<li role="presentation" class="active"><a href="#upgrade" aria-controls="upgrade" role="tab" data-toggle="tab">Upgrade</a></li>
-																		</ul>
+																		</ul> -->
+																		<div class="d-flex">
+																			<span class="switcher switcher-1">
+																				<input type="checkbox" id="switcher-1">
+																				<label for="switcher-1"></label>
+																			</span>
+																		</div>
 																		<div class="offer-text mobile-hidden">
 																			<p>Save upto 81%</p>
 																			<img src="./benefits-of-cibil-subscription_files/images//offer-arrow.png" width="33" class="offer-icon">
 																		</div>
 																	</div>																	
 																	<!-- Tab panes -->
-																	<div class="tab-content">
-																	  <div role="tabpanel" class="tab-pane" id="free">
+																	<div class="tab-content1">
+																	  <div id="free">
 																		<div class="padding-right-6 padding-left-6">
 																			<div class="bg-white border-radius-8 padding-30 position-relative">
 																				<div class="upgrade-card-badge upgrade-card-badge-i mobile-visible">
@@ -939,7 +954,7 @@
 																			</div>
 																		</div>
 																	  </div>
-																	  <div role="tabpanel" class="tab-pane active" id="upgrade">
+																	  <div id="upgrade">
 																		<div class="padding-right-6 padding-left-6">
 																			<div class="bg-white border-radius-8 padding-30 position-relative">
 																				<div class="upgrade-card-badge upgrade-card-badge-i mobile-visible">
@@ -1279,6 +1294,22 @@
 											$('.custom-backdrop').removeClass('up');
 										}        
 									});
+									if($('#switcher-1').prop('checked')) {
+										$("#upgrade").hide();
+										$("#free").show();
+									} else {
+										$("#upgrade").show();
+										$("#free").hide();
+									}
+									$('#switcher-1').change(function () {
+										if($('#switcher-1').prop('checked')) {
+											$("#upgrade").hide();
+											$("#free").show();
+										} else {
+											$("#upgrade").show();
+											$("#free").hide();
+										}
+									});								
 								});
 							</script>
 						</div>
