@@ -66,6 +66,9 @@ h1,h2,h3,h4,h5,h6{
         display: inline-block;
     }
 }
+.letter-spacing-1{
+    letter-spacing: 1px;
+}
 .m-b{
 	margin-bottom: 0 !important;
 }
@@ -498,8 +501,6 @@ h1,h2,h3,h4,h5,h6{
         top: 0;
     }
     .block-option .form-check{
-        // background: #FFFFFF;
-        // border: 1px solid rgba(130, 130, 130, 0.2);
         box-sizing: border-box;
         border-radius: 4px;
         margin-bottom: 10px;
@@ -591,8 +592,8 @@ h1,h2,h3,h4,h5,h6{
         box-shadow: none;
         width: auto;
         position: absolute;
-        top: -25px;
-        right: -15px;
+        top: -12px;
+        right: -30px;
         min-width: auto;
         opacity: 1;
         color: #ffffff;
@@ -996,6 +997,7 @@ h1,h2,h3,h4,h5,h6{
     min-width: 140px;
     margin-bottom: 0;
     line-height: 1;
+    letter-spacing: 0.8px;
     &-orange{
         color: #ffffff;
         background: #F16E33;
@@ -1150,6 +1152,12 @@ h1,h2,h3,h4,h5,h6{
                 -webkit-transform: rotate(45deg);
                 -ms-transform: rotate(45deg);
                 transform: rotate(45deg);
+                @media (max-width: 480px) {
+                    left: 5px;
+                    top: 2px;
+                    width: 4px;
+                    height: 8px;
+                }
             }
         } 
         .checkmark {
@@ -1165,6 +1173,10 @@ h1,h2,h3,h4,h5,h6{
                 content: "";
                 position: absolute;
                 display: none;
+            }
+            @media (max-width: 480px) {
+                height: 15px;
+                width: 15px;
             }
         }      
     }
@@ -1187,6 +1199,28 @@ h1,h2,h3,h4,h5,h6{
     &-sub-title{
         font-size: 12px;
         color: #333333;
+    }
+    &-offer-text{
+        background-image: url("./images/offer-text-bg-mb.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        font-size: 12px;
+        color: #000000;        
+        font-size: 12px;
+        // font-weight: 600;
+        @media (min-width: 769px) {
+            background-image: url("./images/offer-text-bg.png");
+            padding: 7px 18px 5px 18px;
+            position: absolute;
+            right: 0;
+            bottom: 20px;
+        }
+        @media (max-width: 768px) {
+            padding-left: 0;
+            background-position: left;
+            padding: 3px 4px;
+        }
     }
 }
 .offer{
@@ -1305,8 +1339,9 @@ h1,h2,h3,h4,h5,h6{
 	}
 	.subscriptionBenefits button.close{
 		font-size: 40px;
-		top: -30px;
-		right: -25px;
+		top: 5px;
+		right: 15px;
+        opacity: 0.4;
 	}
 }
 @media (min-width: 769px) {
