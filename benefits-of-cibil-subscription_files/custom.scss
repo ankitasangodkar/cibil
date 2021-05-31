@@ -1107,13 +1107,13 @@ h1,h2,h3,h4,h5,h6{
         width: 32%;
         position: relative;
         label{
-            font-family: 'IntroRegular';
             background: #FFFFFF;
             border: 0.5px solid #969696;
             box-shadow: 0px 0px 10px rgba(80, 80, 80, 0.1);
             border-radius: 4px;
             padding: 15px;
             height: 100%;
+            font-family: IntroRegular, sans-serif;
         }
         input {
             position: absolute;
@@ -1123,6 +1123,7 @@ h1,h2,h3,h4,h5,h6{
             width: 100%;
             z-index: 1;
             margin: 0;
+            font-family: IntroRegular, sans-serif;
             &:checked {
                 ~ {
                     .checkmark {
@@ -1185,6 +1186,7 @@ h1,h2,h3,h4,h5,h6{
         font-weight: 400;
         color: #333333;
         margin-bottom: 8px;
+        font-family: IntroRegular, sans-serif;
     }
     &-title{
         font-size: 18px;
@@ -1197,20 +1199,23 @@ h1,h2,h3,h4,h5,h6{
         }
     }
     &-sub-title{
-        font-size: 12px;
+        font-size: 14px;
+        font-family: IntroRegular, sans-serif;
         color: #333333;
+        @media (max-width: 380px) {
+            font-size: 12px;
+        }
     }
     &-offer-text{
-        background-image: url("./images/offer-text-bg-mb.png");
+        background-image: url("./images/offer-text-bg-mb.svg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
         font-size: 12px;
         color: #000000;        
         font-size: 12px;
-        // font-weight: 600;
         @media (min-width: 769px) {
-            background-image: url("./images/offer-text-bg.png");
+            background-image: url("./images/offer-text-bg.svg");
             padding: 7px 18px 5px 18px;
             position: absolute;
             right: 0;
@@ -1324,23 +1329,14 @@ h1,h2,h3,h4,h5,h6{
 .justify-space-between{
     justify-content: space-between;
 }
-@keyframes turn-on {
-    0% {
-       left:100%;
-    }
-    100% {
-       left:0%;
-    }
+.f{
+    &-14{   
+        font-size: 14px;
+    } 
+    &-18{   
+        font-size: 18px;
+    }  
 }
-@keyframes turn-off {
-    0% {
-       right:100%;
-    }
-    100% {
-       right:0%;
-    }
-}
-
 @media (min-width: 768px){
     .text-md-center{
         text-align: center;
@@ -1414,7 +1410,6 @@ h1,h2,h3,h4,h5,h6{
 
 
 // 
-
 span.switcher {
     position: relative;
     width: 298px;
