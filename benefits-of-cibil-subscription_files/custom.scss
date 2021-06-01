@@ -1782,20 +1782,32 @@ span.switcher {
 }
 
 .review {
+    padding: 0 35px;
     &-card{
         background: #F5F5F5;
         border-left: 10px solid #3EA3CE;
-        padding: 50px 20px;
+        padding: 50px 20px;        
+        padding-bottom: 18px;
+        margin: 0 10px;
+        @media (max-width: 768px) {
+            padding: 20px;
+        }
     }
     &-title{
         font-size: 25px;
         color: #000000;
         margin-bottom: 16px;
+        @media (max-width: 480px) {
+            font-size: 18px;
+        }
     }
     &-text{
         font-size: 20px;
         color: #000000;
         margin-bottom: 10px;
+        @media (max-width: 480px) {
+            font-size: 14px;
+        }
     }
     &-ratings{
         display: flex;
@@ -1805,5 +1817,97 @@ span.switcher {
             margin-right: 8px;
             color: #FFCE31;
         }
+    }
+    &-quote{
+        margin-top: 16px;
+        img{
+            margin-left: auto;
+            margin-right: 0;
+        }
+    }
+    &-slider{
+        .slick-track{
+            display: flex;
+        }
+        @media (max-width: 768px) {
+            .slick-arrow{
+                display: none;
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        margin-top: 40px;
+    }
+    @media (max-width: 480px) {
+        padding: 0;
+        margin-top: 40px;
+    }
+}
+
+.slick-custom-arrow{
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;    
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.66);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -30px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    &.slick-prev{
+        background-image: url("./images/slick-prev-arrow.png");
+        left: -30px;
+        @media (max-width: 480px) {
+            left: 0;
+        }
+    }
+    &.slick-next{
+        background-image: url("./images/slick-next-arrow.png");
+        right: -30px;
+        @media (max-width: 480px) {
+            right: 0;
+        }
+    }
+    @media (max-width: 480px) {
+        background: transparent;
+        border: 0;
+        width: 21px;
+        height: 21px;
+    }
+}
+
+.slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    li{
+        margin-bottom: 0;
+        button{
+            padding: 0;
+            min-width: auto;
+            background: #FFFFFF;
+            border: 2px solid #535353;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            min-width: 15px;
+            font-size: 0;
+            margin: 0 10px;
+        }
+        &.slick-active{
+            button{
+                background: #3EA3CE;
+                border: 2px solid #3EA3CE;
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        margin-top: 20px;
     }
 }

@@ -1263,50 +1263,7 @@
 								        </main>
 							        </div>
 							<script>
-								$(document).ready(function() {
-									$('#interstitial-modal1 .show-slideup').on('click', function (e) {
-										$('.custom-slildeup').addClass('up');
-										$('.custom-backdrop').addClass('up');
-									});
-									$(".plans-radio-row input[name='radio-group-1']").on('click', function(){
-										if($('.plans-radio-row input:radio[name=radio-group-1]:checked').val() == "1monthc"){
-											$('.1monthstrikeout').addClass('crossed');
-										} else {
-											$('.1monthstrikeout').removeClass('crossed');
-										}
-									});
-									$(".plans-radio-row input[name='radio-group']").on('click', function(){
-										if($('.plans-radio-row input:radio[name=radio-group]:checked').val() == "1month"){
-											$('.1monthtrikeout').addClass('crossed');
-										} else {
-											$('.1monthtrikeout').removeClass('crossed');
-										}
-									});
-									$('.custom-slildeup').on('click', function(event) { 
-										var $target = $(event.target);
-										if(!$target.closest('.block-option').length && 
-										$('.block-option').is(":visible")) {
-											$('.custom-slildeup').removeClass('up');
-											$('.custom-backdrop').removeClass('up');
-										}        
-									});
-									if($('#switcher-1').prop('checked')) {
-										$("#upgrade").hide();
-										$("#free").show();
-									} else {
-										$("#upgrade").show();
-										$("#free").hide();
-									}
-									$('#switcher-1').change(function () {
-										if($('#switcher-1').prop('checked')) {
-											$("#upgrade").hide();
-											$("#free").show();
-										} else {
-											$("#upgrade").show();
-											$("#free").hide();
-										}
-									});								
-								});
+								
 							</script>
 						</div>
 					</div>
@@ -1720,8 +1677,11 @@
 							<script src="./benefits-of-cibil-subscription_files/kore-no-conflict-end.js"
 								type="text/javascript"></script>
 
-
-
+							<script src="./benefits-of-cibil-subscription_files/slick.min.js" 
+								type="text/javascript"></script>
+								
+							<script src="./benefits-of-cibil-subscription_files/custom.js"
+								type="text/javascript"></script>
 
 						</div>
 					</div>
@@ -1833,7 +1793,7 @@
 	</noscript>
 	<script type="application/javascript" id="ywa-1619521068727-739327" class="ywa-10000" defer=""
 		src="./benefits-of-cibil-subscription_files/sp.pl.download"></script>
-	<script src="./benefits-of-cibil-subscription_files/jquery.min(1).js"></script>
+	<!-- <script src="./benefits-of-cibil-subscription_files/jquery.min(1).js"></script> -->
 	<script src="./benefits-of-cibil-subscription_files/bootstrap.min.js"></script>
 	<script src="./benefits-of-cibil-subscription_files/jquery.validate.min.js"></script>
 	<script src="./benefits-of-cibil-subscription_files/additional-methods.min.js"></script>
@@ -1842,12 +1802,12 @@
 	<script src="./benefits-of-cibil-subscription_files/jquery.visible.min.js"></script>
 	<script src="./benefits-of-cibil-subscription_files/validation.js"></script>
 	<script src="./benefits-of-cibil-subscription_files/TuFontsCounter.js"></script>
-	<script src="./benefits-of-cibil-subscription_files/slick.min.js"></script>
+	<!-- <script src="./benefits-of-cibil-subscription_files/slick.min.js"></script> -->
 	<script src="./benefits-of-cibil-subscription_files/tu-main.js"></script>
 	<script src="./benefits-of-cibil-subscription_files/immersive.js"></script>
 	<script src="./benefits-of-cibil-subscription_files/noJqueryHeaderFooter.js"></script>
 	<script type="text/javascript" src="./benefits-of-cibil-subscription_files/cibil-header-dropdown.js"></script>
-	<script type="text/javascript" src="./benefits-of-cibil-subscription_files/jquery.min(2).js"></script>
+	<!-- <script type="text/javascript" src="./benefits-of-cibil-subscription_files/jquery.min(2).js"></script> -->
 	<script type="text/javascript" src="./benefits-of-cibil-subscription_files/upsell_interstitial(1).js"></script>
 	<div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon806625693691"><img
 			style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon999488998479" width="0"
