@@ -66,21 +66,5 @@ $(document).ready(function() {
             slidesToShow: 1,
             slidesToScroll: 1,
         });
-    } else {
-        $('.myths-slider').unslick();
     }
-    
-    $(window).resize(function () {
-        if ($(window).width() < 768) {
-            $('.myths-slider').slick({
-                arrows: false,
-                dots: true,
-                infinite: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            });
-        } else {
-            $('.myths-slider').unslick();
-        }
-    });
 });
