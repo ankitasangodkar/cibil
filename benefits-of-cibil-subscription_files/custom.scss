@@ -1738,6 +1738,21 @@ span.switcher {
 .store-section{
     padding: 75px 0;
     background: #005365;
+    position: relative;
+    &-bg{
+        position: absolute;
+        top: 0;
+        right: 0;
+        img{
+            @media (max-width: 768px) {
+                max-width: 20 0px;
+            }
+        }
+    }
+    .container{
+        position: relative;
+        z-index: 1;
+    }
     .section-title{
         margin-bottom: 65px;
         @media (max-width: 768px) {
@@ -1857,7 +1872,7 @@ span.switcher {
     cursor: pointer;
     margin-top: -30px;
     background-position: center;
-    background-size: contain;
+    background-size: 11px;
     background-repeat: no-repeat; 
     &.slick-prev{
         background-image: url("./images/slick-prev-arrow.png");
@@ -1910,4 +1925,78 @@ span.switcher {
     @media (max-width: 768px) {
         margin-top: 20px;
     }
+}
+
+.myths-section{
+    padding: 50px 0;
+    .section-title{
+        margin-bottom: 10px;
+    }
+    .section-sub-title{
+        font-size: 20px;
+        line-height: 28px;
+        @media (max-width: 768px) {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    .pr-80{
+        padding-right: 80px;
+        @media (max-width: 768px) {
+            padding-right: 0;
+        }
+    }
+}
+
+.myhths{
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        width: 7px;
+        height: 7px;
+        background: #3EA3CE;
+        border-radius: 50%;
+    }
+    &-left{
+        background-image: linear-gradient(to bottom, #3ea3ce 55%, rgba(255, 255, 255, 0) 0%);
+        background-position: left;
+        background-size: 1px 10px;
+        background-repeat: repeat-y;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 2px;
+        height: 100%;
+    }   
+    &-top{
+        background-image: linear-gradient(to right, #3ea3ce 55%, rgba(255, 255, 255, 0) 0%);
+        background-position: top;
+        background-size: 10px 1px;
+        background-repeat: repeat-x;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+    } 
+    &-title{
+        color: #FF3333;
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 10px;
+        &.green{
+            color: rgba(11, 161, 27, 0.8);
+        }
+    }
+    &-subtitle{
+        font-size: 16px;
+        line-height: 22px;
+        color: rgba(0, 0, 0, 0.8);
+    }
+    padding-top: 60px;
+    padding-left: 16px;
+    padding-bottom: 20px;
 }

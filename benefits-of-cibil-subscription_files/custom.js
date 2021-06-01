@@ -43,7 +43,7 @@ $(document).ready(function() {
     });	
     $('.review-slider').slick({
         dots: true,
-        infinite: false,
+        infinite: true,
         slidesToShow: 2,
         slidesToScroll: 1,
         prevArrow: '<div class="slick-custom-arrow slick-prev"></div>',
