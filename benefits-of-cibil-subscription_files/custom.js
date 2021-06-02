@@ -11,7 +11,7 @@ $(document).ready(function() {
         }
     });
     $(".plans-radio-row input[name='radio-group']").on('click', function(){
-        if($('.plans-radio-row input:radio[name=radio-group]:checked').val() == "1month"){
+        if($('.plans-radio-row input:radio[name=radio-group]:checked').val() == "1M550RM"){
             $('.1monthtrikeout').addClass('crossed');
         } else {
             $('.1monthtrikeout').removeClass('crossed');
@@ -41,6 +41,16 @@ $(document).ready(function() {
             $("#free").hide();
         }
     });	
+    $(".plans-radio-row input[name='radio-group']").on('change', function(){
+        $("#upgrade-link").attr("href", "/enrollShort-page.html?offer="+$('.plans-radio-row input:radio[name=radio-group]:checked').val());
+        // if($('.plans-radio-row input:radio[name=radio-group]:checked').val() == "12months"){
+        //     $("#upgrade-link").attr("href", "/enrollShort-page.html?offer=1Y1200RM");
+        // } else if ($('.plans-radio-row input:radio[name=radio-group]:checked').val() == "6months") {
+        //     $("#upgrade-link").attr("href", "/enrollShort-page.html?offer=6M800RM");
+        // }else {
+        //     $("#upgrade-link").attr("href", "/enrollShort-page.html?offer=1M550RM");
+        // }
+    });
     $('.review-slider').slick({
         dots: true,
         infinite: true,
