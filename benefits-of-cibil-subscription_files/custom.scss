@@ -2104,6 +2104,7 @@ span.switcher {
         padding: 25px 20px;
         position: relative;
         padding-left: 70px;
+        cursor: pointer;
         &[aria-expanded="false"] {
             .closeI{
                 display: none;
@@ -2165,8 +2166,182 @@ span.switcher {
 }
 
 .subscribe-section{
-    padding: 45px 0;
+    padding: 45px 0 63px 0;
     .section-title{
         text-align: center;
+        margin-bottom: 41px;
+        @media (max-width: 767px) {
+            margin-bottom: 25px;
+        }
     }
+    .row{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .col-sm-6, .col-sm-4{
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
+    @media (max-width: 767px) {
+        padding: 36px 0 57px 0;
+    }
+}
+
+.subscribe{
+    &-wrap{
+        padding: 25px;
+        position: relative;
+        &-top{
+            background-image: linear-gradient(to right, #3ea3ce 55%, rgba(255,255,255,0) 0%);
+            background-position: top;
+            background-size: 21px 1px;
+            background-repeat: repeat-x;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+        }
+        &-bottom{
+            background-image: linear-gradient(to right, #3ea3ce 55%, rgba(255,255,255,0) 0%);
+            background-position: bottom;
+            background-size: 20px 1px;
+            background-repeat: repeat-x;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+        }
+        &-left{
+            background-image: linear-gradient(to bottom, #3ea3ce 55%, rgba(255,255,255,0) 0%);
+            background-position: left;
+            background-size: 1px 22px;
+            background-repeat: repeat-y;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1px;
+            height: 100%;
+        }
+        &-right{
+            background-image: linear-gradient(to bottom, #3ea3ce 55%, rgba(255,255,255,0) 0%);
+            background-position: right;
+            background-size: 1px 22px;
+            background-repeat: repeat-y;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 1px;
+            height: 100%;
+        }
+        &-line{
+            position: absolute;            
+            img{
+                width: 100%;
+            }
+            @media (min-width: 768px) {
+                top: 50%;
+                transform: translateY(-50%);
+                right: -88px;
+            }
+            @media (min-width: 768px) and (max-width: 991px) {
+                right: -62px;
+                width: 70px;
+            }
+            @media (max-width: 767px) {
+                bottom: -40px;
+                left: 50%;
+                transform: translateX(-50%) rotate(90deg);
+                max-width: 70px;
+            }
+        }
+        @media (max-width: 767px) {
+            margin-bottom: 67px;
+            padding: 16px;
+        }
+    }
+    &-card{
+        display: flex;
+        border-radius: 4px;
+        &-icon{
+            background: #005365;
+            padding: 40px 17px;
+        }
+        &-text{
+            background: #3EA3CE;
+            padding: 20px 15px;
+            width: 100%;
+            @media  (max-width: 767px) {
+                padding: 13px 15px;
+            }
+            h2{
+                margin: 0;
+                margin-bottom: 3px;
+                font-size: 22px;
+                line-height: 32px;
+                color: #ffffff;
+                @media  (max-width: 767px) {
+                    font-size: 20px;
+                }
+            }
+            p{
+                margin: 0;
+                color: #ffffff;
+                font-size: 22px;
+                line-height: 22px;
+                @media  (max-width: 767px) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }    
+}
+
+.subscribe-form{
+    &-text{
+        font-size: 22px;
+        line-height: 26px;
+        color: #000000;
+        margin-bottom: 22px;
+        @media (max-width: 767px) {
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+            margin-bottom: 18px;
+        }
+    } 
+    input{
+        height: 40px;
+        border-radius: 4px;
+        font-size: 18px;
+        font-family: 'IntroRegular';
+        color: rgba(0, 0, 0, 0.5);
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        &::-webkit-input-placeholder {
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 18px;
+            font-family: 'IntroRegular';
+        }        
+        &:-ms-input-placeholder {
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 18px;
+            font-family: 'IntroRegular';
+        }        
+        &::placeholder {
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 18px;
+            font-family: 'IntroRegular';
+        }
+    } 
+    button{
+        box-shadow: none;
+        height: 40px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        border-radius: 4px;
+    }  
 }
