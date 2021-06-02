@@ -42,7 +42,7 @@ $(document).ready(function() {
         }
     });	
     $(".plans-radio-row input[name='radio-group']").on('change', function(){
-        $("#upgrade-link").attr("href", "/enrollShort-page.html?offer="+$('.plans-radio-row input:radio[name=radio-group]:checked').val());
+        $("#upgrade-link").attr("href", "/cibil/enrollShort-page.html?offer="+$('.plans-radio-row input:radio[name=radio-group]:checked').val());
         // if($('.plans-radio-row input:radio[name=radio-group]:checked').val() == "12months"){
         //     $("#upgrade-link").attr("href", "/enrollShort-page.html?offer=1Y1200RM");
         // } else if ($('.plans-radio-row input:radio[name=radio-group]:checked').val() == "6months") {
