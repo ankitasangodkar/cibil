@@ -2353,6 +2353,7 @@ span.switcher {
         margin-bottom: 12px;
         @media (max-width: 991px) {
             text-align: center;
+            margin-bottom: 15px;
         }
     }
     .shadow-imge{
@@ -2361,10 +2362,16 @@ span.switcher {
         img{
             margin-left: auto;
             margin-right: auto;
+            @media (max-width: 767px) {
+                width: 195px;
+            }
         }
         @media (max-width: 767px) {
             margin-top: 20px;
         }
+    }
+    @media (max-width: 991px) {
+        padding: 32px 0 62px 0;
     }
 }
 
@@ -2376,12 +2383,32 @@ span.switcher {
         line-height: 1;
         font-weight: 700;
         padding: 13px 0;
-        margin-bottom: 35px;
+        margin-bottom: 38px;
+        position: relative;
         span{
             font-size: 22px;            
         }
+        &::before{
+            content: "";
+            background: #3EA3CE;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            left: -100%;
+            @media (max-width: 991px) {
+                display: none;
+            }
+        }
+        @media (max-width: 991px) {
+            text-align: center;
+            font-size: 54px;
+        }
     }
     &-timer{
+        padding: 15px;
+        position: relative;
+        margin-bottom: 40px;
         span{
             display: block;
             font-size: 18px;
@@ -2389,6 +2416,31 @@ span.switcher {
             color: #ffffff;
             text-align: center;
             margin-bottom: 10px;
+        }
+        .icon{
+            position: absolute;
+            &.top-left{
+                top: 0;
+                left: 0;
+            }
+            &.top-right{
+                top: 0;
+                right: 0;
+            }
+            &.bottom-left{
+                bottom: 0;
+                left: 0;
+            }
+            &.bottom-right{
+                bottom: 0;
+                right: 0;
+            }
+            @media (max-width: 991px) {
+                display: none;
+            }
+        }
+        @media (max-width: 991px) {
+            margin-bottom: 32px;
         }
     }
     &-timer-row{
@@ -2408,12 +2460,42 @@ span.switcher {
         line-height: 42px;
         color: #fff;
         margin: 0 10px;
+        @media (max-width: 991px) {
+            font-size: 32px;
+            line-height: 32px;
+        }
+    }
+    &-code{
+        color: #ffffff;
+        font-size: 18px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        span{
+            padding: 6px;
+            display: inline-block;
+            font-size: 32px;
+            line-height: 32px;
+            margin-left: 15px;
+            @media (max-width: 991px) {
+                font-size: 22px;
+                line-height: 22px;
+                border-radius: 4px;
+            }
+        }
+        @media (max-width: 991px) {
+            padding: 15px 0;
+            border-top: 1px solid #257795;
+            border-bottom: 1px solid #257795;
+            justify-content: center;  
+            margin-bottom: 50px;          
+        }
     }
 }
 
 .plans{
     &-row{  
-        padding: 0 35px;   
+        padding: 0 30px;   
         .slick-dots{
             li{
                 button{
@@ -2522,6 +2604,7 @@ span.switcher {
         }
         @media (max-width: 767px) {
             width: 100%;
+            margin: 0 8px;
         }
     }
 }
