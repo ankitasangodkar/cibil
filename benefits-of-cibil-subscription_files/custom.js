@@ -65,6 +65,15 @@ $(document).ready(function() {
             infinite: true,
             slidesToShow: 1,
             slidesToScroll: 1,
-        });
+        }); 
+        $('.plans-row').slick({
+            arrows: true,
+            dots: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            prevArrow: '<div class="slick-custom-arrow slick-prev"></div>',
+            nextArrow: '<div class="slick-custom-arrow slick-next"></div>',
+        });       
     }
 });
