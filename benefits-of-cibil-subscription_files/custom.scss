@@ -1343,6 +1343,9 @@ h1,h2,h3,h4,h5,h6{
 .no-shadow{
     box-shadow: none;
 }
+.min-50vh{
+    min-height: 50vh;
+}
 @media (min-width: 768px){
     .text-md-center{
         text-align: center;
