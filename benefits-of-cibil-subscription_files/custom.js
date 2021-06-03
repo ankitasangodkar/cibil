@@ -84,6 +84,17 @@ $(document).ready(function() {
             }
         ]
     });	
+    if ($(window).width() < 992) {
+        $('.report-slider').slick({
+            arrows: false,
+            dots: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            prevArrow: '<div class="slick-custom-arrow slick-prev"></div>',
+            nextArrow: '<div class="slick-custom-arrow slick-next"></div>',
+        }); 
+    }
     if ($(window).width() < 768) {
         $('.myths-slider').slick({
             arrows: false,
@@ -100,6 +111,6 @@ $(document).ready(function() {
             slidesToScroll: 1,
             prevArrow: '<div class="slick-custom-arrow slick-prev"></div>',
             nextArrow: '<div class="slick-custom-arrow slick-next"></div>',
-        });       
-    }
+        });               
+    }    
 });
