@@ -55,6 +55,9 @@ $(document).ready(function() {
     $(".plans-radio-row input[name='radio-group-1']").on('change', function(){
         $("#upgrade-btn").attr("href", "/cibil/enrollShort-page?offer="+($('#switcher-1').prop('checked')?'FACRAA':$('.plans-radio-row input:radio[name=radio-group-1]:checked').val()));
     });
+    $(".custom-slildeup input[name='flexRadioDefault']").on('change', function(){
+        $("#upgrade-btn-mobile").attr("href", "/cibil/enrollShort-page?offer="+$('.custom-slildeup input:radio[name=flexRadioDefault]:checked').val());
+    });
     $('.review-slider').slick({
         dots: true,
         infinite: true,
