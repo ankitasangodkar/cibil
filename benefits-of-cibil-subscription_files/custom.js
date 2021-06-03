@@ -4,7 +4,7 @@ $(document).ready(function() {
         $('.custom-backdrop').addClass('up');
     });
     $(".plans-radio-row input[name='radio-group-1']").on('click', function(){
-        if($('.plans-radio-row input:radio[name=radio-group-1]:checked').val() == "1monthc"){
+        if($('.plans-radio-row input:radio[name=radio-group-1]:checked').val() == "1M550RM"){
             $('.1monthstrikeout').addClass('crossed');
         } else {
             $('.1monthstrikeout').removeClass('crossed');
@@ -28,28 +28,32 @@ $(document).ready(function() {
     if($('#switcher-1').prop('checked')) {
         $("#upgrade").hide();
         $("#free").show();
+        $("#upgrade-btn").text("CONTINUE");
+        $("#upgrade-btn").attr("href", '/cibil/enrollShort-page?offer=FACRAA');
     } else {
         $("#upgrade").show();
         $("#free").hide();
+        $("#upgrade-btn").text("UPGRADE");
+        $("#upgrade-btn").attr("href", "/cibil/enrollShort-page?offer="+($('#switcher-1').prop('checked')?'FACRAA':$('.plans-radio-row input:radio[name=radio-group-1]:checked').val()));
     }
     $('#switcher-1').change(function () {
         if($('#switcher-1').prop('checked')) {
             $("#upgrade").hide();
             $("#free").show();
+            $("#upgrade-btn").text("CONTINUE");
+            $("#upgrade-btn").attr("href", '/cibil/enrollShort-page?offer=FACRAA');
         } else {
             $("#upgrade").show();
             $("#free").hide();
+            $("#upgrade-btn").text("UPGRADE");
+            $("#upgrade-btn").attr("href", "/cibil/enrollShort-page?offer="+($('#switcher-1').prop('checked')?'FACRAA':$('.plans-radio-row input:radio[name=radio-group-1]:checked').val()));
         }
     });	
     $(".plans-radio-row input[name='radio-group']").on('change', function(){
         $("#upgrade-link").attr("href", "/cibil/enrollShort-page?offer="+$('.plans-radio-row input:radio[name=radio-group]:checked').val());
-        // if($('.plans-radio-row input:radio[name=radio-group]:checked').val() == "12months"){
-        //     $("#upgrade-link").attr("href", "/enrollShort-page.html?offer=1Y1200RM");
-        // } else if ($('.plans-radio-row input:radio[name=radio-group]:checked').val() == "6months") {
-        //     $("#upgrade-link").attr("href", "/enrollShort-page.html?offer=6M800RM");
-        // }else {
-        //     $("#upgrade-link").attr("href", "/enrollShort-page.html?offer=1M550RM");
-        // }
+    });
+    $(".plans-radio-row input[name='radio-group-1']").on('change', function(){
+        $("#upgrade-btn").attr("href", "/cibil/enrollShort-page?offer="+($('#switcher-1').prop('checked')?'FACRAA':$('.plans-radio-row input:radio[name=radio-group-1]:checked').val()));
     });
     $('.review-slider').slick({
         dots: true,
