@@ -2674,6 +2674,18 @@ span.switcher {
         }
     }
     .cibil-report-image{
+        text-align: center;
+        img{
+            position: relative;
+            top: -90px;
+            left: -5%; 
+            @media (min-width: 992px) and (max-width: 1199px){
+                left: 5%;
+            }
+        }
+        @media (min-width: 992px) and (max-width: 1199px){
+            text-align: left;
+        }
         @media (max-width: 991px) {
             display: none;
         }
@@ -2705,7 +2717,20 @@ span.switcher {
     background: #ffffff;
     box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.06);
     border-radius: 4px;
-    margin-bottom: 30px;    
+    margin-bottom: 30px;  
+    position: relative; 
+    &-bm{
+        position: absolute;
+        top: 0;
+        right: 100%;
+        &.bt{
+            top: auto;
+            bottom: 0;
+        }
+        @media (max-width: 991px) {
+            display: none;
+        }
+    } 
     &-img{
         padding-top: 10px;
         min-width: 64px;
@@ -2725,6 +2750,9 @@ span.switcher {
             line-height: 38px;
             color: #3EA3CE;
             margin: 0;
+            @media (min-width: 992px) and (max-width: 1199px){
+                font-size: 18px;
+            }
             @media (max-width: 991px) {
                 font-size: 18px;
                 line-height: 24px; 
@@ -2736,6 +2764,9 @@ span.switcher {
             line-height: 22px;
             color: #000000;
             margin: 0;
+            @media (min-width: 992px) and (max-width: 1199px){
+                font-size: 16px;
+            }
             @media (max-width: 991px) {
                 font-size: 16px;
                 line-height: 25px;
@@ -2748,11 +2779,6 @@ span.switcher {
     }
     &-last-child{
         margin-bottom: 0;
-    }
-    @media (max-width: 991px) {
-        // max-width: 320px;
-        // margin-left: auto;
-        // margin-right: auto;
     }
     @media (max-width: 768px) {
         flex-direction: column;
