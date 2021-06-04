@@ -67,6 +67,10 @@ $(document).ready(function() {
     $(".custom-slildeup input[name='flexRadioDefault']").on('change', function(){
         $("#upgrade-btn-mobile").attr("href", "/cibil/enrollShort-page?offer="+$('.custom-slildeup input:radio[name=flexRadioDefault]:checked').val());
     });
+    $('#myTabs li').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+    })
     $('.review-slider').slick({
         dots: true,
         infinite: true,
