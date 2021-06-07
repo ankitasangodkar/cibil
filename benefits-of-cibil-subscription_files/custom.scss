@@ -2209,6 +2209,9 @@ span.switcher {
 
 .subscribe-section{
     padding: 45px 0 63px 0;
+    .container{
+        max-width: 1020px;
+    }
     .section-title{
         text-align: center;
         margin-bottom: 41px;
@@ -2385,6 +2388,8 @@ span.switcher {
         padding-top: 6px;
         padding-bottom: 6px;
         border-radius: 4px;
+        background-color: #FCD833;
+        border-color: #FCD833;
     }  
 }
 
