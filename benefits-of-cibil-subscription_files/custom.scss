@@ -1864,7 +1864,7 @@ span.switcher {
         }
         @media (max-width: 768px) {
             .slick-arrow{
-                display: none;
+                display: none !important;
             }
         }
     }
@@ -3093,6 +3093,7 @@ span.switcher {
             align-items: center;
             justify-content: center;            
             flex-direction: column;
+            position: relative;
             h3{
                 margin: 0;
                 margin-bottom: 9px;
@@ -3109,6 +3110,19 @@ span.switcher {
                 font-weight: 400;
                 line-height: 18px;
                 color: #2B2B2B; 
+            }
+            .tab-badge{
+                position: absolute;
+                top: -8px;
+                width: 100%;                
+                padding: 4px;
+                border-radius: 3px 3px 0px 0px;
+                h6{
+                    margin: 0;
+                    color: #2B2B2B;
+                    font-size: 12px;
+                    font-family: 'IntroRegular';
+                }
             }
             &.active{
                 background: #F5FFFF;
