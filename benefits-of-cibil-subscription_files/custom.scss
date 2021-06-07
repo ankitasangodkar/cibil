@@ -76,7 +76,7 @@ h1,h2,h3,h4,h5,h6{
     &-41{
         line-height: 41px;
         @media (max-width: 767px) {
-            line-height: 35px;
+            line-height: 32px;
         }
     }
 }
@@ -530,6 +530,7 @@ h1,h2,h3,h4,h5,h6{
         width: 100%;
         border: 1px solid rgba(130,130,130,0.2);
         transition: all 0.5s ease-in;
+        border-radius: 4px;
     }
     .block-option .form-check input{
         width: 20px;
@@ -1113,7 +1114,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .text-line-through{
     text-decoration: line-through;
-    color: #B1B4B7;
+    color: #B1B4B7 !important;
 }
 .plans-radio{
     &-row{
@@ -1126,11 +1127,11 @@ h1,h2,h3,h4,h5,h6{
         }
     }
     &-col{
-        width: 32%;
+        width: 31%;
         position: relative;
         label{
             background: #FFFFFF;
-            border: 0.5px solid #969696;
+            border: 1px solid #969696;
             box-shadow: 0px 0px 10px rgba(80, 80, 80, 0.1);
             border-radius: 4px;
             padding: 15px;
@@ -1243,7 +1244,7 @@ h1,h2,h3,h4,h5,h6{
             background-image: url("./images/offer-text-bg.svg");
             padding: 7px 18px 5px 18px;
             position: absolute;
-            right: 0;
+            right: 1px;
             bottom: 20px;
         }
         @media (max-width: 768px) {
