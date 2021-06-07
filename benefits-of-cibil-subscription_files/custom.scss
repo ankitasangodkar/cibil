@@ -2111,6 +2111,9 @@ span.switcher {
 .faq-section{
     padding: 66px 0 55px 0;
     background: #EEEEEE;
+    .container{
+        max-width: 1020px;
+    }
     .section-title{
         margin-bottom: 15px;
         text-align: center;
