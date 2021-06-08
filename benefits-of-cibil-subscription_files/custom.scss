@@ -1,4 +1,4 @@
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6, div{
 	font-family: 'IntroRegular';
 }
 .light{
@@ -284,6 +284,9 @@ h1,h2,h3,h4,h5,h6{
     &-1{
         padding-left: 10px;
     }
+    &-14{
+        padding-left: 14px;
+    }
     &-15{
         padding-left: 15px;
     }
@@ -544,7 +547,7 @@ h1,h2,h3,h4,h5,h6{
     .block-option .form-check label{
         padding: 12px 15px;
         width: 100%;
-        border: 1px solid rgba(130,130,130,0.2);
+        border: 2px solid rgba(130,130,130,0.2);
         transition: all 0.5s ease-in;
         border-radius: 4px;
     }
@@ -773,7 +776,7 @@ h1,h2,h3,h4,h5,h6{
 						transform: scale(1) translateY(-50%);
 					}
 					background: #ffffff;
-					border: 1px solid #00A2D1;
+					border: 2px solid #00A2D1;
 					box-sizing: border-box;
 					box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
 					border-radius: 4px;
@@ -1043,7 +1046,7 @@ h1,h2,h3,h4,h5,h6{
     }
     &-skip{
         @media (max-width: 768px) {
-            border: 1px solid transparent;
+            // border: 1px solid transparent;
             min-width: 80px;
             padding: 12px 20px;
         }        
@@ -1225,10 +1228,10 @@ h1,h2,h3,h4,h5,h6{
     }
     &-price{
         font-size: 14px;
-        font-weight: 400;
+        font-weight: 600;
         color: #333333;
         margin-bottom: 8px;
-        font-family: IntroRegular, sans-serif;
+        font-family: 'IntroRegular';
     }
     &-title{
         font-size: 18px;
@@ -1527,7 +1530,7 @@ span.switcher {
         border-right: 10px solid transparent;
         border-bottom: 10px solid #ffffff;
         position: absolute;
-        bottom: -51px;
+        bottom: -31px;
         right: 64px;
         transition: left 0.5s, right 0.4s 0.2s;
     }
@@ -3354,4 +3357,13 @@ span.switcher {
     @media (max-width: 767px) {
         border-bottom: 3px solid #FCD833;
     }
+}
+
+.sticky-modal-footer{
+    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.1);
+    @media (max-width: 767px) {
+        position: sticky;
+        bottom: 0;
+        z-index: 10;
+    }    
 }
