@@ -1150,7 +1150,8 @@ h1,h2,h3,h4,h5,h6, div{
         position: relative;
         label{
             background: #FFFFFF;
-            border: 1px solid #969696;
+            // border: 1px solid #969696;
+            border: 1px solid #E5E5E5;
             box-shadow: 0px 0px 10px rgba(80, 80, 80, 0.1);
             border-radius: 4px;
             padding: 15px;
@@ -1180,7 +1181,8 @@ h1,h2,h3,h4,h5,h6, div{
                     }
                     label{
                         background: #EAF1FF;
-                        border: 1px solid rgba(0, 83, 101, 0.69);
+                        // border: 1px solid rgba(0, 83, 101, 0.69);
+                        border: 2px solid #3EA3CE;
                         box-shadow: 0px 0px 10px rgba(80, 80, 80, 0.25);
                         border-radius: 4px;
                     }
@@ -1224,6 +1226,9 @@ h1,h2,h3,h4,h5,h6, div{
                 height: 15px;
                 width: 15px;
             }
+        }
+        @media (max-width: 767px) {
+            width: 32px;
         }      
     }
     &-price{
@@ -3367,9 +3372,7 @@ span.switcher {
 
 .sticky-modal-footer{
     box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.1);
-    @media (max-width: 767px) {
-        position: sticky;
-        bottom: 0;
-        z-index: 10;
-    }    
+    position: sticky;
+    bottom: 0;
+    z-index: 10;    
 }
