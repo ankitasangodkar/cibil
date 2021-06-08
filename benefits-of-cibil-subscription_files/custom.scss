@@ -1590,6 +1590,9 @@ span.switcher {
             margin: 0;
             margin-bottom: 22px;
             color: #ffffff;
+            .bg-yellow{
+                padding: 1px 4px;
+            }
             @media (max-width: 991px) {
                 font-size: 28px;
                 line-height: 36px;
