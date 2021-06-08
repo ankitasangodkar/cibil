@@ -1037,7 +1037,7 @@ h1,h2,h3,h4,h5,h6, div{
 .bttn{
     font-size: 16px;
     font-family: 'IntroRegular';
-    padding: 14px 70px;
+    padding: 15px 70px;
     border-radius: 999px;
     color: rgba(0, 0, 0, 0.7);
     border: 1px solid #969696;
@@ -1047,6 +1047,8 @@ h1,h2,h3,h4,h5,h6, div{
     margin-bottom: 0;
     line-height: 1;
     letter-spacing: 0.8px;
+    outline: 0 !important;
+    text-decoration: none;
     &-orange{
         color: #ffffff;
         background: #F16E33;
