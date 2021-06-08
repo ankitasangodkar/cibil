@@ -1263,7 +1263,7 @@ h1,h2,h3,h4,h5,h6, div{
     &-title{
         font-size: 18px;
         font-family: 'IntroBold';
-        font-weight: 700;
+        // font-weight: 700;
         color: #333333;
         margin-bottom: 10px;
         @media (min-width: 992px) and (max-width: 1199px) {
@@ -1275,7 +1275,8 @@ h1,h2,h3,h4,h5,h6, div{
     }
     &-sub-title{
         font-size: 14px;
-        font-family: IntroRegular, sans-serif;
+        font-weight: 400;
+        // font-family: IntroRegular, sans-serif;
         color: #333333;
         @media (max-width: 380px) {
             font-size: 12px;
