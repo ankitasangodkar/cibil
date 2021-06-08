@@ -4,6 +4,7 @@ $(document).ready(function() {
         $('.custom-slildeup').addClass('up');
         $('.custom-backdrop').addClass('up');
     });
+
     $(".plans-radio-row input[name='radio-group-1']").on('click', function(){
         if($('.plans-radio-row input:radio[name=radio-group-1]:checked').val() == "1M550RM"){
             $('.1monthstrikeout').addClass('crossed');
@@ -124,4 +125,11 @@ $(document).ready(function() {
             nextArrow: '<div class="slick-custom-arrow slick-next"></div>',
         });               
     }    
+});
+
+$(document).on('keyup',function(evt) {
+    if (evt.keyCode == 27) {
+        $('.custom-slildeup').removeClass('up');
+        $('.custom-backdrop').removeClass('up');
+    }
 });
