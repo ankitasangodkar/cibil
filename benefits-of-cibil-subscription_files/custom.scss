@@ -1704,18 +1704,39 @@ span.switcher {
             width: max-content;   
             border-radius: 5px; 
             .left{
-                // background-image: url("./images/coupon-bg.png");
-                // background-position: left;
-                // background-size: cover;
                 padding: 20px 10px 20px 15px;
                 font-size: 22px;
                 color: #ffffff;
                 border-top-left-radius: 5px;
                 border-bottom-left-radius: 5px;
                 background-color: #1d79a0;
+                position: relative;
+                .scircle{
+                    position: absolute;
+                    top: 50%;
+                    left: -1px;
+                    transform: translateY(-50%);
+                }
             }
             .right{
                 padding: 18px 38px 18px 18px;
+                position: relative;
+                .scircle{
+                    position: absolute;
+                    top: 50%;
+                    right: -1px;
+                    transform: translateY(-50%) rotate(180deg);
+                }
+                .line{
+                    position: absolute;
+                    top: 50%;
+                    left: 100%;
+                    transform: translateY(-50%);
+                    width: 65%;
+                    @media (min-width: 992px) and (max-width: 1199px) {
+                        width: 56%;
+                    }
+                }
                 .save-text{
                     background: #FCF2DB;
                     padding: 4px 10px;
@@ -2788,6 +2809,9 @@ span.switcher {
                 line-height: 16px;
                 padding: 12px 30px 12px;
                 top: -40px;
+                @media (min-width: 992px) and (max-width: 1199px) {
+                    font-size: 14px;
+                }
             }
         }
         &-title{
@@ -3110,6 +3134,18 @@ span.switcher {
         box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.03);
         position: relative;
         border-top-left-radius: 7px;
+        .line{
+            position: absolute;
+            right: 100%;
+            top: 33px;
+            width: 79%;
+            @media (max-width: 1199px) {
+                top: 29px;
+            }
+            @media (max-width: 991px) {
+                display: none;
+            }
+        }
     }
     &-3{
         width: 16%;
@@ -3300,6 +3336,7 @@ span.switcher {
             justify-content: center;            
             flex-direction: column;
             position: relative;
+            box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.19);
             h3{
                 margin: 0;
                 margin-bottom: 9px;
@@ -3333,6 +3370,7 @@ span.switcher {
             &.active{
                 background: #F5FFFF;
                 border: 1px solid #F5FFFF;
+                box-shadow: none;
             }
         }
     }
@@ -3471,17 +3509,34 @@ span.switcher {
         font-family: 'IntroRegular';
         font-weight: 700;
         color: #2b2b2b;
+        @media (max-width: 380px) {
+            font-size: 16px;
+        }
     }
     h5{
         margin: 0;
         font-size: 14px;
         color: #2b2b2b;
+        @media (max-width: 380px) {
+            font-size: 12px;
+        }
     }
     h4{
         margin: 0;
         font-size: 16px;
         font-family: 'IntroRegular';
         color: #2b2b2b;
+        @media (max-width: 380px) {
+            font-size: 14px;
+        }
+    }
+    @media (max-width: 380px) {
+        width: calc(100% - 10px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media (max-width: 340px) {
+        width: calc(100% - 5px);
     }
 }
 
