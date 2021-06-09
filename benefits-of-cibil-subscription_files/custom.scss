@@ -1906,6 +1906,9 @@ span.switcher {
         padding-bottom: 18px;
         margin: 0 10px;
         height: auto;
+        &:nth-child(even) { 
+            border-left: 10px solid #FCD833;
+        }
         @media (max-width: 768px) {
             padding: 20px;
         }
@@ -2493,7 +2496,8 @@ span.switcher {
         color: #FCD833;
         font-size: 98px;
         line-height: 1;
-        font-weight: 700;
+        font-family: 'IntroBold';
+        font-weight: 400;
         padding: 13px 0;
         margin-bottom: 38px;
         position: relative;
@@ -2667,7 +2671,7 @@ span.switcher {
     }
     &-card{
         background: #ffffff;
-        padding: 37px 10px 70px 10px; 
+        padding: 37px 10px 60px 10px; 
         text-align: center;
         width: 33.33%;
         position: relative;
@@ -2773,6 +2777,7 @@ span.switcher {
 
 .report-section{
     padding: 75px 0;
+    background: #FBFBFB;
     .section-title{
         text-align: center;
         margin-bottom: 80px;
@@ -3006,6 +3011,9 @@ span.switcher {
         background: #FFFFFF;
         box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.03);
         position: relative;
+        .plans-card-badge{
+            background: #005365;
+        }
     }
     &-4{
         width: 16%;
@@ -3136,7 +3144,7 @@ span.switcher {
 }
 
 .features-section{
-    padding-bottom: 50px;
+    // padding-bottom: 50px;
     @media (max-width: 991px) {
         display: none;
     }
@@ -3149,7 +3157,7 @@ span.switcher {
         text-align: center;
         font-size: 18px;
         line-height: 18px;
-        margin-bottom: 13px;
+        margin-bottom: 30px;
         color: #001B38;
     }
     .feature-list{
