@@ -1225,7 +1225,8 @@ h1,h2,h3,h4,h5,h6, div{
             @media (max-width: 767px) {
                 box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.1);
                 padding: 8px;
-                height: 101px;
+                // height: 101px;
+                border: 2px solid #E5E5E5;
             }
         }
         input {
@@ -1903,8 +1904,18 @@ span.switcher {
         top: 0;
         right: 0;
         img{
+            &.mobile{
+                @media (min-width: 769px) {
+                    display: none;
+                }
+            }
+            &.desktop{
+                @media (max-width: 768px) {
+                    display: none;
+                }
+            }
             @media (max-width: 768px) {
-                max-width: 20 0px;
+                max-width: 200px;
             }
         }
     }
@@ -2649,6 +2660,11 @@ span.switcher {
             font-size: 42px;
             font-family: 'IntroRegular';
             line-height: 42px;
+            position: relative;
+            top: -18px;
+            @media (max-width: 991px) {
+                top: -7px;
+            }
         }
     }
     &-timer-col{
@@ -2657,6 +2673,15 @@ span.switcher {
         line-height: 42px;
         color: #fff;
         margin: 0 10px;
+        span{
+            display: block;
+            font-size: 14px;
+            line-height: 36px;
+            margin-bottom: 0;
+            @media (max-width: 991px) {
+                line-height: 14px;
+            }
+        }
         @media (max-width: 991px) {
             font-size: 32px;
             line-height: 32px;
