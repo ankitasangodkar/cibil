@@ -2746,6 +2746,12 @@ span.switcher {
         }  
         .slick-list{
             padding-top: 50px;
+            .slick-track{
+                display: flex;
+                .plans-card{
+                    height: auto;
+                }
+            }
         }
         @media (min-width: 768px) {
             display: flex;
@@ -2810,6 +2816,22 @@ span.switcher {
                 font-style: italic;
             }
         }
+        &-mobile-text{
+            position: relative;
+            top: -20px;
+            font-size: 12px;
+            line-height: 12px;
+            color: rgba(0, 27, 56, 0.6);
+            margin: 0;
+        }
+        &-button{
+            @media (max-width: 767px) {
+                position: absolute;
+                bottom: 25px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
         button{
             margin: 0 auto;
         }
@@ -2829,7 +2851,7 @@ span.switcher {
         @media (max-width: 767px) {
             width: 100%;
             margin: 0 8px;
-            padding-bottom: 25px;
+            padding-bottom: 55px;
             border-bottom-right-radius: 7px; 
             border-bottom-left-radius: 7px; 
         }
