@@ -1071,7 +1071,7 @@ h1,h2,h3,h4,h5,h6, div{
 .bttn{
     font-size: 16px;
     font-family: 'IntroRegular';
-    padding: 15px 70px;
+    padding: 8px 70px;
     border-radius: 999px;
     color: rgba(0, 0, 0, 0.8);
     border: 1px solid #969696;
@@ -1085,12 +1085,16 @@ h1,h2,h3,h4,h5,h6, div{
     text-decoration: none;
     height: 46px;
     text-align: center;
+    display: inline-block;
     &-orange{
         color: #ffffff;
         background: #F16E33;
         border: 1px solid #F16E33;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
     } 
+    @media (min-width: 769px) {
+        line-height: 29px;
+    }
     @media (max-width: 768px) {
         font-size: 14px;
     }   
@@ -1099,8 +1103,8 @@ h1,h2,h3,h4,h5,h6, div{
         font-size: 14px;
     }
     &-skip{
+        text-transform: uppercase;
         @media (max-width: 768px) {
-            // border: 1px solid transparent;
             min-width: 80px;
             padding: 14px 20px;
         } 
@@ -1111,10 +1115,10 @@ h1,h2,h3,h4,h5,h6, div{
     }
     &-upgrade{
         @media (max-width: 768px) {
-            padding: 12px 60px;
+            padding: 14px 60px;
         }
         @media (max-width: 480px) {
-            padding: 12px 50px;
+            padding: 14px 50px;
         } 
     }
     &-no-border{
