@@ -939,7 +939,6 @@ h1,h2,h3,h4,h5,h6, div{
         border-bottom-color: transparent;
     }
 }
-
 .upgrade-card{
     background: #FFFFFF;
     border-radius: 8px;
@@ -998,7 +997,18 @@ h1,h2,h3,h4,h5,h6, div{
         max-width: 530px;
     }
 }
-
+.tab-content1{
+    .card-row{
+        .card-row-text{
+            h5{
+                font-size: 18px !important;
+                @media (max-content: 768px) {
+                    font-size: 17px !important; 
+                }
+            }
+        }
+    }
+}
 .buttonc{
     font-size: 12px;
     padding: 12px;
@@ -1051,24 +1061,29 @@ h1,h2,h3,h4,h5,h6, div{
     letter-spacing: 0.8px;
     outline: 0 !important;
     text-decoration: none;
+    height: 46px;
     &-orange{
         color: #ffffff;
         background: #F16E33;
         border: 1px solid #F16E33;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
-    }    
+    } 
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }   
     @media (max-width: 480px) {
         padding: 12px 30px;
+        font-size: 14px;
     }
     &-skip{
         @media (max-width: 768px) {
             // border: 1px solid transparent;
             min-width: 80px;
-            padding: 12px 20px;
+            padding: 14px 20px;
         } 
         @media (max-width: 480px) {
             min-width: 108px;
-            padding: 12px 10px;
+            padding: 14px 10px;
         }       
     }
     &-upgrade{
@@ -1177,11 +1192,12 @@ h1,h2,h3,h4,h5,h6, div{
             border: 1px solid #E5E5E5;
             box-shadow: 0px 0px 10px rgba(80, 80, 80, 0.1);
             border-radius: 4px;
-            padding: 15px;
+            padding: 10px;
             height: 100%;
             font-family: IntroRegular, sans-serif;
             @media (max-width: 767px) {
                 box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.1);
+                padding: 8px;
             }
         }
         input {
@@ -1254,11 +1270,14 @@ h1,h2,h3,h4,h5,h6, div{
         }      
     }
     &-price{
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 600;
         color: #333333;
-        margin-bottom: 8px;
+        margin-bottom: 6px;
         font-family: 'IntroRegular';
+        @media (max-width: 767px) {
+            font-size: 14px;
+        }
     }
     &-title{
         font-size: 18px;
@@ -1298,15 +1317,15 @@ h1,h2,h3,h4,h5,h6, div{
         }
         @media (min-width: 769px) {
             background-image: url("./images/offer-text-bg.svg");
-            padding: 7px 18px 5px 18px;
+            padding: 7px 15px 5px 15px;
             position: absolute;
             right: 1px;
-            bottom: 20px;
+            bottom: 15px;
         }
         @media (max-width: 768px) {
             padding-left: 0;
             background-position: left;
-            padding: 3px 4px;
+            padding: 1px 4px;
         }
     }
 }
@@ -1476,6 +1495,7 @@ h1,h2,h3,h4,h5,h6, div{
 	}
     .mobile-transparent{
         background: transparent;
+        padding-left: 0;
     }
 }
 @media (max-width: 767px){
@@ -1765,6 +1785,7 @@ span.switcher {
         @media (max-width: 768px) {
             margin-bottom: 26px;
             align-items: flex-start;
+            position: relative;
         }
     }
     &-icon{
@@ -1782,6 +1803,7 @@ span.switcher {
         font-size: 24px;
         font-family: 'IntroRegular';
         position: relative;
+        padding-top: 3px;
         &:after{
             content: "";
             position: absolute;
@@ -1791,7 +1813,13 @@ span.switcher {
             height: 100%;
             top: 51px;
             @media (max-width: 768px) {
+                background: transparent;
                 top: 25px;
+                background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #3ea3ce), color-stop(0%, rgba(255,255,255,0)));
+                background-image: linear-gradient(to bottom, #3ea3ce 50%, rgba(255,255,255,0) 0%);
+                background-position: left;
+                background-size: 3px 9px;
+                background-repeat: repeat-y;
             }
         }
         @media (max-width: 768px) {
@@ -1803,6 +1831,8 @@ span.switcher {
             box-shadow: none;
             border: 1.5px solid #005365;
             color: #005365;
+            position: static;
+            padding-top: 0;
         }
     }
     &-text{
