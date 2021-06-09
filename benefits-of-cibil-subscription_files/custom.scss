@@ -1002,7 +1002,7 @@ h1,h2,h3,h4,h5,h6, div{
         .card-row-text{
             h5{
                 font-size: 18px !important;
-                @media (max-content: 768px) {
+                @media (max-width: 768px) {
                     font-size: 17px !important; 
                 }
             }
@@ -1282,23 +1282,22 @@ h1,h2,h3,h4,h5,h6, div{
     &-title{
         font-size: 18px;
         font-family: 'IntroBold';
-        // font-weight: 700;
         color: #333333;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
         @media (min-width: 992px) and (max-width: 1199px) {
             font-size: 16px;
         }
-        @media (max-width: 380px) {
-            font-size: 12px;
+        @media (max-width: 480px) {
+            font-size: 13px;
+            margin-bottom: 8px;
         }
     }
     &-sub-title{
         font-size: 14px;
         font-weight: 400;
-        // font-family: IntroRegular, sans-serif;
         color: #333333;
-        @media (max-width: 380px) {
-            font-size: 12px;
+        @media (max-width: 480px) {
+            font-size: 11px;
         }
     }
     &-offer-text{
@@ -1326,6 +1325,7 @@ h1,h2,h3,h4,h5,h6, div{
             padding-left: 0;
             background-position: left;
             padding: 1px 4px;
+            margin-top: 6px;
         }
     }
 }
