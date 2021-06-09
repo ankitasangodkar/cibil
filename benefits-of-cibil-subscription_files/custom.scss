@@ -75,7 +75,7 @@ h1,h2,h3,h4,h5,h6, div{
 }
 .line-height{
     &-41{
-        line-height: 41px;
+        line-height: 37px;
         @media (max-width: 767px) {
             line-height: 32px;
         }
@@ -301,6 +301,11 @@ h1,h2,h3,h4,h5,h6, div{
         padding-right: 90px;
         @media (max-width: 768px) {
             padding-right: 20px;
+        }
+    }
+    &-md-25{
+        @media (min-width: 992px) {
+            padding-right: 25px;
         }
     }
 }
@@ -1079,6 +1084,7 @@ h1,h2,h3,h4,h5,h6, div{
     outline: 0 !important;
     text-decoration: none;
     height: 46px;
+    text-align: center;
     &-orange{
         color: #ffffff;
         background: #F16E33;
