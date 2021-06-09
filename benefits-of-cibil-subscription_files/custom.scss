@@ -95,9 +95,26 @@ h1,h2,h3,h4,h5,h6, div{
 }
 .padding-30{
     padding: 30px;
+    &.pb{
+        @media (max-width: 768px) {
+            padding-bottom: 20px;
+        }
+    }
     @media (max-width: 768px) {
         padding: 30px 15px;
         // padding-top: 50px;
+    }
+}
+.mobile-fonts{
+    h3{
+        @media (max-width: 768px) {
+            font-size: 24px;
+        }
+    }
+    h4.f-18{
+        @media (max-width: 768px) {
+            font-size: 20px;
+        }
     }
 }
 .btn-blue-outline{
