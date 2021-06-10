@@ -3611,6 +3611,9 @@ span.switcher {
         margin-left: 10px;
         margin-right: 15px;
         height: 36px;
+        @media (max-width: 380px) {
+            height: 30px;
+        }
     }
     h3 {
         margin: 0;
