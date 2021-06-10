@@ -1696,6 +1696,9 @@ span.switcher {
             .bg-yellow {
                 padding: 1px 4px;
                 font-family: inherit;
+                @media (max-width: 991px) {
+                    padding: 5px 4px 0;
+                }
             }
             @media (max-width: 991px) {
                 font-size: 28px;
@@ -2810,6 +2813,7 @@ span.switcher {
                 font-size: 22px;
                 line-height: 22px;
                 border-radius: 4px;
+                padding-bottom: 0;
             }
         }
         @media (max-width: 991px) {
