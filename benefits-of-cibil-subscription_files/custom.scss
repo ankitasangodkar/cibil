@@ -1899,7 +1899,6 @@ span.switcher {
         margin-left: 15px;
         @media (max-width: 768px) {
             font-size: 18px;
-            // line-height: 38px;
             color: #005365;
         }
     }
@@ -1907,10 +1906,8 @@ span.switcher {
         button{
             min-width: 260px;
             font-size: 14px;
-            padding-top: 15px;
-            padding-bottom: 15px;
-            // display: inline-flex;
-            // align-items: center;
+            padding-top: 14px;
+            padding-bottom: 14px;
             // justify-content: center;
             @media (max-width: 768px) {
                 min-width: 230px;
@@ -3189,7 +3186,7 @@ span.switcher {
         width: 18%;
     }
     &-item{
-        min-height: 135px;
+        min-height: 130px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -3202,7 +3199,7 @@ span.switcher {
             line-height: 22px;
             color: #000000;
             margin: 0;
-            margin-bottom: 16px;
+            margin-bottom: 10px;
             @media (max-width: 992px) and (max-width: 1199px) {
                 font-size: 18px;
                 line-height: 20px; 
@@ -3210,8 +3207,8 @@ span.switcher {
         }
         p{
             font-size: 16px;
-            font-family: 'IntroLight';
-            font-weight: 300;
+            font-family: 'IntroRegular';
+            font-weight: 400;
             line-height: 22px;
             color: #000000;
             margin: 0;
@@ -3259,7 +3256,7 @@ span.switcher {
         }
         .text-black{
             font-size: 24px;
-            font-family: 'IntroRegular';
+            font-family: 'IntroBold';
             font-weight: 400;
             line-height: 24px;
             color: #000000;
@@ -3269,6 +3266,7 @@ span.switcher {
         }
         button{
             margin: 0;
+            font-size: 14px;
             @media (min-width: 992px) and (max-width: 1199px) {
                 min-width: 115px;
                 font-size: 10px;
@@ -3450,7 +3448,7 @@ span.switcher {
         color: #000000;
         font-size: 15px;
         line-height: 20px;
-        font-weight: 400;
+        font-weight: 600;
     }
 }
 
