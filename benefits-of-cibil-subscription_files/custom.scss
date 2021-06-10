@@ -1919,6 +1919,9 @@ span.switcher {
             margin-top: 50px;
         }
     }
+    @media (max-width: 768px) {
+        padding: 0 25px;
+    }
 }
 
 .store-section{
@@ -2006,6 +2009,7 @@ span.switcher {
         }
         @media (max-width: 768px) {
             padding: 20px;
+            text-align: left;
         }
     }
     &-title{
@@ -2593,7 +2597,8 @@ span.switcher {
         line-height: 1;
         font-family: 'IntroBold';
         font-weight: 400;
-        padding: 13px 0;
+        // padding: 13px 0;
+        padding: 13px 0 10px 0;
         margin-bottom: 38px;
         position: relative;
         span{
@@ -2636,7 +2641,8 @@ span.switcher {
         @media (max-width: 991px) {
             text-align: center;
             font-size: 54px;
-            padding: 8px 0;
+            // padding: 8px 0;
+            padding: 8px 0 6px 0;
         }
     }
     &-timer{
@@ -2711,6 +2717,7 @@ span.switcher {
         @media (max-width: 991px) {
             font-size: 32px;
             line-height: 32px;
+            text-align: center;
         }
     }
     &-code{
@@ -2852,6 +2859,9 @@ span.switcher {
             line-height: 12px;
             color: rgba(0, 27, 56, 0.6);
             margin: 0;
+            @media (min-width: 768px) {
+                display: none;
+            }
         }
         &-button{
             @media (max-width: 767px) {
