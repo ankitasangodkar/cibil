@@ -1909,6 +1909,11 @@ span.switcher {
         button{
             min-width: 260px;
             font-size: 14px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             @media (max-width: 768px) {
                 min-width: 230px;
                 margin-left: auto;
