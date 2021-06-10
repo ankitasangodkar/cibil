@@ -2928,12 +2928,13 @@ span.switcher {
         &-mobile-text {
             position: relative;
             top: -20px;
-            font-size: 12px;
-            line-height: 12px;
+            font-size: 14px;
+            line-height: 15px;
             color: rgba(0, 27, 56, 0.6);
             margin: 0;
-            @media (min-width: 768px) {
-                // display: none;
+            @media (max-width: 767px) {
+                font-size: 12px;
+                line-height: 12px;
             }
         }
         &-button {
@@ -2941,6 +2942,9 @@ span.switcher {
             bottom: 25px;
             left: 50%;
             transform: translateX(-50%);
+            @media (max-width: 767px) {
+                bottom: 25px;
+            }
         }
         button {
             margin: 0 auto;
