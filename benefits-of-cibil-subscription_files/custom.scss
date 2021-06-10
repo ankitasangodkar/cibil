@@ -2164,6 +2164,11 @@ span.switcher {
             padding-right: 0;
         }
     }
+    .col-sm-4{
+        @media (max-width: 767px) {
+            padding: 0 10px;
+        }
+    }
     @media (max-width: 767px) {
         padding: 50px 0;
     }
@@ -2692,7 +2697,7 @@ span.switcher {
             text-align: center;
             font-size: 54px;
             // padding: 8px 0;
-            padding: 8px 0 6px 0;
+            padding: 11px 0 6px 0;
         }
     }
     &-timer{
@@ -2800,7 +2805,7 @@ span.switcher {
 
 .plans{
     &-row{  
-        padding: 0 30px;   
+        padding: 0 30px;         
         .slick-dots{
             li{
                 button{
@@ -2831,6 +2836,7 @@ span.switcher {
             padding-top: 50px;
             .slick-track{
                 display: flex;
+                flex-flow: row-reverse;
                 .plans-card{
                     height: auto;
                 }
