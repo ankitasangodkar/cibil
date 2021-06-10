@@ -36,9 +36,7 @@ h1,h2,h3,h4,h5,h6, div{
         font-family: 'IntroRegular';
     }
     &-600{
-        // font-weight: 600 !important;
-        // font-family: 'IntroSemiBold';
-        font-family: 'IntroBold';
+        font-family: 'IntroBold' !important;
     }
     &-700{
         font-weight: 700 !important;
@@ -1911,9 +1909,9 @@ span.switcher {
             font-size: 14px;
             padding-top: 15px;
             padding-bottom: 15px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
+            // display: inline-flex;
+            // align-items: center;
+            // justify-content: center;
             @media (max-width: 768px) {
                 min-width: 230px;
                 margin-left: auto;
@@ -3478,10 +3476,10 @@ span.switcher {
             font-family: 'IntroRegular';
             line-height: 12px;
             color: #000000;
-        }
-        .bttn{
-            display: initial;
-        }
+        }        
+    }
+    .bttn{
+        display: initial;
     }
 }
 
