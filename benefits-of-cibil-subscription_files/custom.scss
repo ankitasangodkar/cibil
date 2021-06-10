@@ -1796,6 +1796,9 @@ span.switcher {
             font-size: 18px;
             line-height: 26px;
         }
+        img{
+            max-width: 200px;
+        }
         @media (min-width: 992px) {
             display: none;
         }
