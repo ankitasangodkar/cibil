@@ -1849,10 +1849,41 @@ span.switcher {
         align-items: center;
         margin-bottom: 50px;
         &:last-child {
-            .steps-icon {
+            .steps-icon, .mobile-icon {
                 &::after {
                     display: none;
                 }
+            }
+        }
+        .mobile-icon{
+            // position: relative;
+            &:after {
+                content: "";
+                position: absolute;
+                width: 2px;
+                color: #ffffff;
+                background: rgba(62, 163, 206, 0.4);
+                height: 100%;
+                top: 51px;
+                left: 12px;
+                @media (max-width: 768px) {
+                    background: transparent;
+                    top: 25px;
+                    background-image: -webkit-gradient(
+                        linear,
+                        left top,
+                        left bottom,
+                        color-stop(50%, #3ea3ce),
+                        color-stop(0%, rgba(255, 255, 255, 0))
+                    );
+                    background-image: linear-gradient(to bottom, #3ea3ce 50%, rgba(255, 255, 255, 0) 0%);
+                    background-position: left;
+                    background-size: 3px 9px;
+                    background-repeat: repeat-y;
+                }
+            }
+            @media (min-width: 769px) {
+                display: none;
             }
         }
         @media (max-width: 768px) {
@@ -1916,6 +1947,7 @@ span.switcher {
             align-items: center;
             justify-content: center;
             line-height: 1;
+            display: none;
         }
     }
     &-text {
