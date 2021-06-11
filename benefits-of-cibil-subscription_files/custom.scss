@@ -1978,6 +1978,10 @@ span.switcher {
                     display: none;
                 }
             }
+            @media (max-width: 480px) {
+                padding-top: 16px;
+                padding-bottom: 16px;
+            }
         }
         @media (max-width: 768px) {
             text-align: center;
@@ -3596,6 +3600,10 @@ span.switcher {
     }
     .bttn {
         display: initial;
+        @media (max-width: 480px) {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
     }
     &.bottom{
         box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
