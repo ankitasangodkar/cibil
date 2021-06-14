@@ -441,6 +441,11 @@ div {
 .position-relative {
     position: relative;
 }
+.mobile-full-width{
+    @media (max-width: 767px) {
+        flex: 1;
+    }
+}
 .line-separator {
     &-white {
         height: 1px;

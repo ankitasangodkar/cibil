@@ -475,7 +475,11 @@ div {
         margin-right: 5px !important;
     }
 }
-
+.mobile-full-width{
+    @media (max-width: 767px) {
+        flex: 1;
+    }
+}
 .mobile-fonts {
     h3 {
         @media (max-width: 768px) {
