@@ -5,7 +5,7 @@ h4,
 h5,
 h6,
 div {
-    font-family: "IntroRegular";
+    font-family: "Intro";
 }
 .light {
     &-grey-bg {
@@ -35,22 +35,23 @@ div {
 .fw {
     &-300 {
         font-weight: 300 !important;
-        font-family: "IntroLight";
+        font-family: "Intro";
     }
     &-400 {
         font-weight: 400 !important;
-        font-family: "IntroRegular";
+        font-family: "Intro";
     }
     &-600 {
-        font-family: "IntroBold" !important;
+        font-family: "Intro" !important;
+        font-weight: 600 !important;
     }
     &-700 {
         font-weight: 700 !important;
-        font-family: "IntroBold";
+        font-family: "Intro";
     }
     &-rg-600 {
         font-weight: 600 !important;
-        font-family: "IntroRegular" !important;
+        font-family: "Intro" !important;
     }
 }
 .text {
@@ -135,7 +136,7 @@ div {
     background: #ffffff;
     text-decoration: none;
     font-size: 16px;
-    font-family: "IntroRegular";
+    font-family: "Intro";
     padding: 4px 10px;
     min-width: 125px;
     text-align: center;
@@ -1086,7 +1087,7 @@ div {
 }
 .bttn {
     font-size: 16px;
-    font-family: "IntroRegular";
+    font-family: "Intro";
     padding: 8px 70px;
     border-radius: 999px;
     color: rgba(0, 0, 0, 0.8);
@@ -1238,7 +1239,7 @@ div {
             border-radius: 4px;
             padding: 10px;
             height: 100%;
-            font-family: IntroRegular, sans-serif;
+            font-family: Intro, sans-serif;
             @media (max-width: 767px) {
                 box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.1);
                 padding: 8px;
@@ -1254,7 +1255,7 @@ div {
             width: 100%;
             z-index: 1;
             margin: 0;
-            font-family: IntroRegular, sans-serif;
+            font-family: Intro, sans-serif;
             &:checked {
                 ~ {
                     .checkmark {
@@ -1320,14 +1321,15 @@ div {
         font-weight: 600;
         color: #333333;
         margin-bottom: 6px;
-        font-family: "IntroRegular";
+        font-family: "Intro";
         @media (max-width: 767px) {
             font-size: 14px;
         }
     }
     &-title {
         font-size: 18px;
-        font-family: "IntroBold";
+        font-family: "Intro";
+        font-weight: 700;
         color: #333333;
         margin-bottom: 8px;
         @media (min-width: 992px) and (max-width: 1199px) {
@@ -1581,7 +1583,7 @@ span.switcher {
     height: 48px;
     border-radius: 25px;
     margin: 0;
-    font-family: "IntroRegular";
+    font-family: "Intro";
     input {
         margin: 0;
         appearance: none;
@@ -1607,7 +1609,7 @@ span.switcher {
             content: "Free";
             left: 55px;
             font-size: 18px;
-            font-family: "IntroRegular";
+            font-family: "Intro";
             font-weight: 600;
             line-height: 18px;
         }
@@ -1615,7 +1617,7 @@ span.switcher {
             content: "Upgrade";
             right: 40px;
             font-size: 18px;
-            font-family: "IntroRegular";
+            font-family: "Intro";
             font-weight: 600;
             line-height: 18px;
         }
@@ -1826,7 +1828,7 @@ span.switcher {
 .section-title {
     font-size: 36px;
     font-weight: 600 !important;
-    font-family: "IntroRegular";
+    font-family: "Intro";
     line-height: 48px;
     color: #000000;
     margin: 0;
@@ -1841,7 +1843,7 @@ span.switcher {
 
 .steps-section {
     padding: 70px 0;
-    font-family: "IntroRegular";
+    font-family: "Intro";
     .section-title {
         @media (max-width: 768px) {
             text-align: center;
@@ -1914,7 +1916,7 @@ span.switcher {
         justify-content: center;
         color: #ffffff;
         font-size: 24px;
-        font-family: "IntroRegular";
+        font-family: "Intro";
         position: relative;
         padding-top: 3px;
         &:after {
@@ -1962,7 +1964,7 @@ span.switcher {
     &-text {
         font-size: 22px;
         font-weight: 600;
-        font-family: "IntroRegular";
+        font-family: "Intro";
         line-height: 26px;
         color: #000000;
         margin-left: 15px;
@@ -2414,7 +2416,7 @@ span.switcher {
     }
     &-content {
         border-top: 0 !important;
-        font-family: "IntroLight";
+        font-family: "Intro";
         font-weight: 300;
         font-size: 20px;
         line-height: 27px;
@@ -2425,7 +2427,7 @@ span.switcher {
         border-bottom-left-radius: 4px;
         border-bottom-right-radius: 4px;
         p {
-            font-family: "IntroLight";
+            font-family: "Intro";
             font-weight: 300;
             font-size: 20px;
             line-height: 27px;
@@ -2650,24 +2652,24 @@ span.switcher {
         height: 40px;
         border-radius: 4px;
         font-size: 18px;
-        font-family: "IntroRegular";
+        font-family: "Intro";
         color: rgba(0, 0, 0, 0.5);
         background: rgba(255, 255, 255, 0.9);
         border: 1px solid rgba(0, 0, 0, 0.3);
         &::-webkit-input-placeholder {
             color: rgba(0, 0, 0, 0.5);
             font-size: 18px;
-            font-family: "IntroRegular";
+            font-family: "Intro";
         }
         &:-ms-input-placeholder {
             color: rgba(0, 0, 0, 0.5);
             font-size: 18px;
-            font-family: "IntroRegular";
+            font-family: "Intro";
         }
         &::placeholder {
             color: rgba(0, 0, 0, 0.5);
             font-size: 18px;
-            font-family: "IntroRegular";
+            font-family: "Intro";
         }
     }
     button {
@@ -2717,8 +2719,8 @@ span.switcher {
         color: #fcd833;
         font-size: 98px;
         line-height: 1;
-        font-family: "IntroBold";
-        font-weight: 400;
+        font-family: "Intro";
+        font-weight: 700;
         // padding: 13px 0;
         padding: 13px 0 10px 0;
         margin-bottom: 38px;
@@ -2812,7 +2814,7 @@ span.switcher {
         color: #ffffff;
         .double-dots {
             font-size: 42px;
-            font-family: "IntroRegular";
+            font-family: "Intro";
             line-height: 42px;
             position: relative;
             top: -18px;
@@ -2823,7 +2825,7 @@ span.switcher {
     }
     &-timer-col {
         font-size: 42px;
-        font-family: "IntroRegular";
+        font-family: "Intro";
         line-height: 42px;
         color: #fff;
         margin: 0 10px;
@@ -3037,8 +3039,8 @@ span.switcher {
     background: #f16e33;
     border: 1px solid #f16e33;
     font-size: 12px;
-    font-weight: 400;
-    font-family: "IntroBold";
+    font-weight: 700;
+    font-family: "Intro";
     letter-spacing: 1px;
     border-radius: 2px;
     padding: 12px 10px;
@@ -3325,7 +3327,7 @@ span.switcher {
         border-bottom: 1px solid #ebebeb;
         h3 {
             font-size: 20px;
-            font-family: "IntroRegular";
+            font-family: "Intro";
             font-weight: 400;
             line-height: 22px;
             color: #000000;
@@ -3338,7 +3340,7 @@ span.switcher {
         }
         p {
             font-size: 16px;
-            font-family: "IntroRegular";
+            font-family: "Intro";
             font-weight: 400;
             line-height: 22px;
             color: #000000;
@@ -3378,7 +3380,7 @@ span.switcher {
         justify-content: flex-end;
         .text-grey {
             font-size: 18px;
-            font-family: "IntroRegular";
+            font-family: "Intro";
             font-weight: 400;
             line-height: 22px;
             color: rgba(0, 0, 0, 0.6);
@@ -3387,7 +3389,7 @@ span.switcher {
         }
         .text-black {
             font-size: 24px;
-            font-family: "IntroRegular";
+            font-family: "Intro";
             font-weight: 600;
             line-height: 24px;
             color: #000000;
@@ -3493,15 +3495,15 @@ span.switcher {
                 margin: 0;
                 margin-bottom: 9px;
                 font-size: 20px;
-                font-family: "IntroBold";
-                font-weight: 400;
+                font-family: "Intro";
+                font-weight: 700;
                 line-height: 20px;
                 color: #333333;
             }
             h4 {
                 margin: 0;
                 font-size: 18px;
-                font-family: "IntroRegular";
+                font-family: "Intro";
                 font-weight: 400;
                 line-height: 18px;
                 color: #2b2b2b;
@@ -3516,7 +3518,7 @@ span.switcher {
                     margin: 0;
                     color: #2b2b2b;
                     font-size: 12px;
-                    font-family: "IntroRegular";
+                    font-family: "Intro";
                 }
             }
             &.active {
@@ -3542,8 +3544,8 @@ span.switcher {
     text-align: center;
     a {
         font-size: 16px;
-        font-family: "IntroBold";
-        font-weight: 400;
+        font-family: "Intro";
+        font-weight: 700;
         letter-spacing: 1px;
         color: #f16e33;
         text-decoration: underline;
@@ -3597,14 +3599,14 @@ span.switcher {
             margin: 0;
             margin-bottom: 2px !important;
             font-size: 26px !important;
-            font-family: "IntroRegular";
+            font-family: "Intro";
             line-height: 1;
             color: #000000;
         }
         p {
             margin: 0;
             font-size: 12px;
-            font-family: "IntroRegular";
+            font-family: "Intro";
             line-height: 12px;
             color: #000000;
         }
@@ -3633,15 +3635,15 @@ span.switcher {
         margin-left: 12px;
         h3 {
             font-size: 20px;
-            font-family: "IntroRegular";
+            font-family: "Intro";
             line-height: 26px;
             color: rgba(0, 0, 0, 0.8);
             margin: 0;
         }
         h4 {
             font-size: 16px;
-            font-family: "IntroBold";
-            font-weight: 400;
+            font-family: "Intro";
+            font-weight: 700;
             color: #000000;
             margin: 0;
             margin-top: 5px;
@@ -3675,8 +3677,7 @@ span.switcher {
     h3 {
         margin: 0;
         font-size: 20px;
-        font-family: "IntroBold";
-        font-family: "IntroRegular";
+        font-family: "Intro";
         font-weight: 700;
         color: #2b2b2b;
         @media (max-width: 380px) {
@@ -3694,7 +3695,7 @@ span.switcher {
     h4 {
         margin: 0;
         font-size: 16px;
-        font-family: "IntroRegular";
+        font-family: "Intro";
         color: #2b2b2b;
         @media (max-width: 380px) {
             font-size: 14px;
