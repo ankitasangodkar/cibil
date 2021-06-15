@@ -10,10 +10,12 @@
     <!-- Use the latest (edge) version of IE rendering engine -->
     <meta name="x-apple-disable-message-reformatting">
     <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
     <title></title>
     <!--[if mso]>
         <style>
-            * { ont-family: 'Montserrat',Roboto !important; }
+            * { font-family: 'Montserrat',Roboto !important; }
         </style>
     <![endif]-->
     <!--[if !mso]><!-->
@@ -105,18 +107,22 @@
                 max-width: 100%;
             }
         }
+        @media (prefers-color-scheme: dark ) {
+            .darkmode { background: #F9F9F9 !important; }
+            .darkmodeW { background: #ffffff !important; }
+        }
     </style>
 </head>
 
 <body>
     <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center" width="600"
-        class="document" style="max-width: 600px;min-width: 600px;width: 100%;margin: 0 auto;background: #ffffff;border: 4px solid #3EA3CE;font-family: 'Montserrat',Roboto">
+        class="document darkmodeW" style="max-width: 600px;min-width: 600px;width: 100%;margin: 0 auto;background: #ffffff;border: 4px solid #3EA3CE;font-family: 'Montserrat',Roboto">
         <tr>
             <td valign="top">
                 <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center"
                     style="width: 100%;">
                     <tr>
-                        <td style="background: #F9F9F9;">
+                        <td class="darkmode" style="background: #F9F9F9;">
                             <img src="https://ankitasangodkar.github.io/cibil/email-template/img/email-header.png">
                         </td>
                     </tr>
@@ -124,7 +130,7 @@
                 <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center"
                     style="width: 100%;">
                     <tr>
-                        <td style="background: #F9F9F9;padding: 32px 65px;">
+                        <td class="darkmode" style="background: #F9F9F9;padding: 32px 65px;">
                             <h1
                                 style="font-size: 38px;line-height: 48px;color: #3EA3CE;margin: 0;margin-bottom: 18px;text-transform: uppercase;">
                                 Don’t Ignore your credit health.</h1>
