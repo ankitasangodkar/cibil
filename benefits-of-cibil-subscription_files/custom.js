@@ -60,13 +60,13 @@ $(document).ready(function() {
         }
     });	
     $(".plans-radio-row input[name='radio-group']").on('change', function(){
-        $("#upgrade-link").attr("href", "/cibil/enrollShort-page?offer="+$('.plans-radio-row input:radio[name=radio-group]:checked').val());
+        $("#upgrade-link").attr("href", "https://myscore.cibil.com/CreditView/enrollShort.page?enterprise=CIBIL&offer="+$('.plans-radio-row input:radio[name=radio-group]:checked').val());
     });
     $(".plans-radio-row input[name='radio-group-1']").on('change', function(){
-        $("#upgrade-btn").attr("href", "/cibil/enrollShort-page?offer="+$('.plans-radio-row input:radio[name=radio-group-1]:checked').val());
+        $("#upgrade-btn").attr("href", "https://myscore.cibil.com/CreditView/enrollShort.page?enterprise=CIBIL&offer="+$('.plans-radio-row input:radio[name=radio-group-1]:checked').val());
     });
     $(".custom-slildeup input[name='flexRadioDefault']").on('change', function(){
-        $("#upgrade-btn-mobile").attr("href", "/cibil/enrollShort-page?offer="+$('.custom-slildeup input:radio[name=flexRadioDefault]:checked').val());
+        $("#upgrade-btn-mobile").attr("href", "https://myscore.cibil.com/CreditView/enrollShort.page?enterprise=CIBIL&offer="+$('.custom-slildeup input:radio[name=flexRadioDefault]:checked').val());
     });
     $('#myTabs li').click(function (e) {
         e.preventDefault()
