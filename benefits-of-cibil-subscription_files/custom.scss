@@ -43,14 +43,14 @@ div {
     }
     &-600 {
         font-family: "Intro" !important;
-        font-weight: 600 !important;
+        font-weight: 700 !important;
     }
     &-700 {
         font-weight: 700 !important;
         font-family: "Intro";
     }
     &-rg-600 {
-        font-weight: 600 !important;
+        font-weight: 700 !important;
         font-family: "Intro" !important;
     }
 }
@@ -1121,6 +1121,7 @@ div {
     }
     &-skip {
         text-transform: uppercase;
+        letter-spacing: 0;
         @media (max-width: 768px) {
             min-width: 80px;
             padding: 14px 20px;
@@ -1131,6 +1132,7 @@ div {
         }
     }
     &-upgrade {
+        font-weight: 600;
         @media (max-width: 768px) {
             padding: 14px 60px;
         }
