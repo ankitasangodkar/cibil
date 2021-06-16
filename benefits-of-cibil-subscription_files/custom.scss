@@ -31,6 +31,9 @@ div {
     &-bottom-2 {
         border-bottom: 2px solid #fcd833;
     }
+    &-bottom-1 {
+        border-bottom: 1px solid #fcd833;
+    }
 }
 .fw {
     &-300 {
@@ -58,6 +61,9 @@ div {
     &-color-black {
         color: #000000 !important;
     }
+    &-color-black-05 {
+        color: rgba(0, 0, 0, 0.5);
+    }
     &-color-black-08 {
         color: rgba(0, 0, 0, 0.8);
     }
@@ -69,6 +75,9 @@ div {
     }
     &-color-grey {
         color: #666666;
+    }
+    &-color-light-blue{
+        color: #3EA3CE;
     }
 }
 .d {
@@ -512,7 +521,7 @@ div {
 }
 .subscriptionBenefits {
     .modal-dialog {
-        width: 70%;
+        // width: 70%;
         &.w-700 {
             width: 100%;
             max-width: 720px;
@@ -1192,8 +1201,16 @@ div {
         margin-bottom: 5px;
     }
 }
-.border-radius-8 {
-    border-radius: 8px;
+.border-radius{
+    &-0 {
+        border-radius: 0;
+    }
+    &-2 {
+        border-radius: 2px;
+    }
+    &-8 {
+        border-radius: 8px;
+    }
 }
 .card-row {
     display: flex;
@@ -1217,9 +1234,14 @@ div {
         }
     }
 }
-.text-line-through {
-    text-decoration: line-through;
-    color: #b1b4b7 !important;
+.text{
+    &-line-through {
+        text-decoration: line-through;
+        color: #b1b4b7 !important;
+    }
+    &-underline{
+        text-decoration: underline;
+    }
 }
 .plans-radio {
     &-row {
