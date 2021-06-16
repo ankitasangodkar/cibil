@@ -130,7 +130,18 @@ $(document).ready(function() {
             prevArrow: '<div class="slick-custom-arrow slick-prev"></div>',
             nextArrow: '<div class="slick-custom-arrow slick-next"></div>',
         });               
-    }    
+    }   
+    $(".steps-action button").click(function() {
+        if ($(window).width() < 992) {
+            $('html, body').animate({
+                scrollTop: $(".features-mobile-section").offset().top
+            }, 2000);
+        } else {
+            $('html, body').animate({
+                scrollTop: $(".features-section").offset().top - 170
+            }, 2000);
+        }
+    });
 });
 
 $(document).on('keyup',function(evt) {
