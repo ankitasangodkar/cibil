@@ -2320,11 +2320,12 @@ span.switcher {
         position: relative;
         &-icon {
             position: absolute;
-            top: -2px;
+            top: -5px;
             left: -25px;
             background: #ffffff;
             @media (max-width: 767px) {
                 left: -32px;
+                top: -1px;
             }
         }
         &.myth {

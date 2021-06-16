@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    console.log("test 121212");
     $('#interstitial-modal1 .show-slideup').on('click', function (e) {
         e.preventDefault();
         $('.custom-slildeup').addClass('up');
@@ -74,7 +73,6 @@ $(document).ready(function() {
         $(this).tab('show');
     });
     $('#interstitial-modal1').on('show.bs.modal', function () {
-        console.log("shown");
         $('#12monthsc').prop('checked', true);
     });
     $('#interstitial-modal2').on('show.bs.modal', function () {
