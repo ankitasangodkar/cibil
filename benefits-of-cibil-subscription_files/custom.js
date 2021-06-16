@@ -142,6 +142,11 @@ $(document).ready(function() {
             }, 2000);
         }
     });
+    $(".desktop-click").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#fs").offset().top - 200
+        }, 2000);
+    });
 });
 
 $(document).on('keyup',function(evt) {
