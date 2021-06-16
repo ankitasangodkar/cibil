@@ -49,7 +49,7 @@ div {
         font-weight: 700 !important;
     }
     &-700 {
-        font-weight: 700 !important;
+        font-weight: 600 !important;
         font-family: "Intro";
     }
     &-rg-600 {
@@ -520,8 +520,10 @@ div {
     }
 }
 .subscriptionBenefits {
+    .modal{
+        z-index: 999999;
+    }
     .modal-dialog {
-        // width: 70%;
         &.w-700 {
             width: 100%;
             max-width: 720px;
