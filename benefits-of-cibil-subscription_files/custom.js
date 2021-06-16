@@ -147,6 +147,31 @@ $(document).ready(function() {
             scrollTop: $("#fs").offset().top - 200
         }, 2000);
     });
+
+
+    // Timer js
+    let countDownDate = new Date("july 5, 2021 15:37:25").getTime();
+    let x = setInterval(function() {
+        let now = new Date().getTime();
+        let distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        $("#days").html(days + "<span class='fw-400'>Days</span>");
+        $("#hours").html(hours + "<span class='fw-400'>Hours</span>");
+        $("#minutes").html(minutes + "<span class='fw-400'>Minutes</span>");
+        $("#seconds").html(seconds + "<span class='fw-400'>Seconds</span>");	
+
+        if (distance < 0) {
+            clearInterval(x);
+            $("#timer-wrap").html("<span class='fw-rg-600'>PROMO EXPIRED</span>")
+        }
+
+    }, 1000);
 });
 
 $(document).on('keyup',function(evt) {
