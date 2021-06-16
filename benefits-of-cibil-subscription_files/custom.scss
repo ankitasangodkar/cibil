@@ -1376,7 +1376,7 @@ div {
         }
     }
     &-offer-text {
-        background-image: url("./images/offer-text-bg-mb.svg");
+        background-image: url("https://www.cibil.com/resources/cibil/img/popup/offer-text-bg-mb.svg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -1384,13 +1384,13 @@ div {
         color: #000000;
         font-size: 12px;
         &.orange {
-            background-image: url("./images/offer-text-bg-mb-orange.svg");
+            background-image: url("https://www.cibil.com/resources/cibil/img/popup/offer-text-bg-mb-orange.svg");
             @media (min-width: 769px) {
-                background-image: url("./images/offer-text-bg-orange.svg");
+                background-image: url("https://www.cibil.com/resources/cibil/img/popup/offer-text-bg-orange.svg");
             }
         }
         @media (min-width: 769px) {
-            background-image: url("./images/offer-text-bg.svg");
+            background-image: url("https://www.cibil.com/resources/cibil/img/popup/offer-text-bg.svg");
             padding: 7px 15px 5px 15px;
             position: absolute;
             right: 1px;
@@ -1718,7 +1718,7 @@ span.switcher {
 
 .banner {
     // background: linear-gradient(85.87deg, rgba(62, 163, 206, 0.9) 41.7%, rgba(255, 255, 255, 0) 76.11%);
-    background-image: url("./images/bannergradient.png");
+    background-image: url("https://www.cibil.com/resources/cibil/img/popup/bannergradient.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -2186,14 +2186,14 @@ span.switcher {
     background-size: 11px;
     background-repeat: no-repeat;
     &.slick-prev {
-        background-image: url("./images/slick-prev-arrow.png");
+        background-image: url("https://www.cibil.com/resources/cibil/img/popup/slick-prev-arrow.png");
         left: -30px;
         @media (max-width: 480px) {
             left: 0;
         }
     }
     &.slick-next {
-        background-image: url("./images/slick-next-arrow.png");
+        background-image: url("https://www.cibil.com/resources/cibil/img/popup/slick-next-arrow.png");
         right: -30px;
         @media (max-width: 480px) {
             right: 0;
@@ -3496,8 +3496,11 @@ span.switcher {
             padding: 5px;
             color: #666666;
             display: flex;
+            align-items: center;
             img {
                 margin-right: 4px;
+                position: relative;
+                // top: -1px;
             }
         }
     }
@@ -3680,7 +3683,7 @@ span.switcher {
 }
 
 .coupon-mobile {
-    background-image: url("./images/coupon-mobile-bg.svg");
+    background-image: url("https://www.cibil.com/resources/cibil/img/popup/coupon-mobile-bg.svg");
     display: flex;
     align-items: center;
     justify-content: center;
