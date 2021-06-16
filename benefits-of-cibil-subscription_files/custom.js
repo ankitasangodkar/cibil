@@ -4,7 +4,6 @@ $(document).ready(function() {
         $('.custom-slildeup').addClass('up');
         $('.custom-backdrop').addClass('up');
     });
-
     $(".plans-radio-row input[name='radio-group-1']").on('click', function(){
         if($('.plans-radio-row input:radio[name=radio-group-1]:checked').val() == "1M550RM"){
             $('.1monthstrikeout').addClass('crossed');
@@ -30,33 +29,17 @@ $(document).ready(function() {
     if($('#switcher-1').prop('checked')) {
         $("#upgrade").hide();
         $("#free").show();
-        // $("#upgrade-btn").text("CONTINUE");
-        // $("#upgrade-btn").attr("href", '/cibil/enrollShort-page?offer=FACRAA');
-        // $(".show-link").show();
-        // $(".show-slideup").hide();
     } else {
         $("#upgrade").show();
         $("#free").hide();
-        // $("#upgrade-btn").text("UPGRADE");
-        // $("#upgrade-btn").attr("href", "/cibil/enrollShort-page?offer="+($('#switcher-1').prop('checked')?'FACRAA':$('.plans-radio-row input:radio[name=radio-group-1]:checked').val()));
-        // $(".show-link").hide();
-        // $(".show-slideup").show();
     }
     $('#switcher-1').change(function () {
         if($('#switcher-1').prop('checked')) {
             $("#upgrade").hide();
             $("#free").show();
-            // $("#upgrade-btn").text("CONTINUE");
-            // $("#upgrade-btn").attr("href", '/cibil/enrollShort-page?offer=FACRAA');
-            // $(".show-link").show();
-            // $(".show-slideup").hide();
         } else {
             $("#upgrade").show();
             $("#free").hide();
-            // $("#upgrade-btn").text("UPGRADE");
-            // $("#upgrade-btn").attr("href", "/cibil/enrollShort-page?offer="+($('#switcher-1').prop('checked')?'FACRAA':$('.plans-radio-row input:radio[name=radio-group-1]:checked').val()));
-            // $(".show-link").hide();
-            // $(".show-slideup").show();
         }
     });	
     $(".plans-radio-row input[name='radio-group']").on('change', function(){
