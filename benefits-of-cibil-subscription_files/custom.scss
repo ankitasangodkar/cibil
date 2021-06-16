@@ -440,10 +440,11 @@ div {
     background: #3ea3ce;
     font-size: 12px;
     color: #ffffff;
-    padding: 2px 6px;
+    padding: 4px 6px;
     position: absolute;
     top: -10px;
     right: 20px;
+    line-height: 1;
     &-0 {
         right: 0;
     }
@@ -1129,11 +1130,11 @@ div {
         line-height: 29px;
     }
     @media (max-width: 768px) {
-        font-size: 13px;
+        // font-size: 13px;
     }
     @media (max-width: 480px) {
         padding: 12px 30px;
-        font-size: 13px;
+        // font-size: 13px;
     }
     &-skip {
         // text-transform: uppercase;
@@ -1142,10 +1143,12 @@ div {
         @media (max-width: 768px) {
             min-width: 80px;
             padding: 14px 20px;
+            font-size: 13px
         }
         @media (max-width: 480px) {
             min-width: 108px;
             padding: 14px 10px;
+            font-size: 13px
         }
     }
     &-upgrade {
@@ -1419,6 +1422,7 @@ div {
             font-style: italic;
             color: #fff;
             margin-left: 25px;
+            line-height: 1;
         }
     }
     &-icon {
@@ -1479,7 +1483,7 @@ div {
     right: 0;
     left: 0;
     bottom: 0;
-    z-index: 1051;
+    z-index: 9999999;
     display: none;
     &.up {
         display: block;
@@ -1492,7 +1496,7 @@ div {
     right: 0;
     left: 0;
     bottom: 0;
-    z-index: 1052;
+    z-index: 9999999;
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
